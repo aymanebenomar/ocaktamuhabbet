@@ -12,14 +12,57 @@ export default function BookTableSection() {
     people: '',
   })
 
+  const [loading, setLoading] = useState(false)
+  const [message, setMessage] = useState({ type: '', text: '' })
+
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value })
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
-    // Here you will integrate Supabase insertion logic later
-    console.log('Form submitted', formData)
+    setLoading(true)
+    setMessage({ type: '', text: '' })
+
+    try {
+      const response = await fetch('http://localhost:3001/api/bookings', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      })
+
+      const data = await response.json()
+
+      if (data.success) {
+        setMessage({ 
+          type: 'success', 
+          text: t('booking_success', 'Booking submitted successfully! We will contact you soon.')
+        })
+        // Reset form
+        setFormData({
+          fullName: '',
+          phone: '',
+          date: '',
+          time: '',
+          people: '',
+        })
+      } else {
+        setMessage({ 
+          type: 'error', 
+          text: data.message || t('booking_error', 'Something went wrong. Please try again.')
+        })
+      }
+    } catch (error) {
+      console.error('Error submitting booking:', error)
+      setMessage({ 
+        type: 'error', 
+        text: t('booking_error', 'Failed to submit booking. Please check your connection.')
+      })
+    } finally {
+      setLoading(false)
+    }
   }
 
   return (
@@ -46,6 +89,19 @@ export default function BookTableSection() {
           {t('reserve_your_spot', 'Reserve your spot and enjoy our exquisite cuisine')}
         </p>
 
+        {/* Success/Error Message */}
+        {message.text && (
+          <div
+            className={`mb-6 p-4 rounded-lg ${
+              message.type === 'success'
+                ? 'bg-green-100 text-green-800 border border-green-300'
+                : 'bg-red-100 text-red-800 border border-red-300'
+            }`}
+          >
+            {message.text}
+          </div>
+        )}
+
         {/* Form */}
         <form onSubmit={handleSubmit} className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-left">
           {/* Full Name */}
@@ -66,6 +122,7 @@ export default function BookTableSection() {
               placeholder={t('enter_full_name', 'Enter your full name')}
               className="px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-900 focus:border-transparent"
               required
+              disabled={loading}
             />
           </div>
 
@@ -87,6 +144,7 @@ export default function BookTableSection() {
               placeholder={t('enter_phone_number', 'Enter your phone number')}
               className="px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-900 focus:border-transparent"
               required
+              disabled={loading}
             />
           </div>
 
@@ -107,6 +165,7 @@ export default function BookTableSection() {
               onChange={handleChange}
               className="px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-900 focus:border-transparent"
               required
+              disabled={loading}
             />
           </div>
 
@@ -127,6 +186,7 @@ export default function BookTableSection() {
               onChange={handleChange}
               className="px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-900 focus:border-transparent"
               required
+              disabled={loading}
             />
           </div>
 
@@ -149,6 +209,7 @@ export default function BookTableSection() {
               placeholder={t('enter_number_of_people', 'Enter number of people')}
               className="px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-900 focus:border-transparent"
               required
+              disabled={loading}
             />
           </div>
 
@@ -156,9 +217,12 @@ export default function BookTableSection() {
           <div className="sm:col-span-2 text-center mt-4">
             <button
               type="submit"
-              className="px-6 py-2 border border-gray-900 text-gray-900 uppercase tracking-widest hover:bg-gray-900 hover:text-white transition duration-300 rounded-lg"
+              disabled={loading}
+              className={`px-6 py-2 border border-gray-900 text-gray-900 uppercase tracking-widest hover:bg-gray-900 hover:text-white transition duration-300 rounded-lg ${
+                loading ? 'opacity-50 cursor-not-allowed' : ''
+              }`}
             >
-              {t('book_table', 'Book Now')}
+              {loading ? t('submitting', 'Submitting...') : t('book_table', 'Book Now')}
             </button>
           </div>
         </form>

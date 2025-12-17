@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { createClient } from '@supabase/supabase-js';
 
 // Replace with your Supabase URL & Key
 const supabaseUrl = 'https://your-supabase-url.supabase.co';

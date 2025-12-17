@@ -66,14 +66,14 @@ export default function Home() {
               to="/menu"
               className="px-10 py-3 border border-white uppercase tracking-widest hover:bg-white hover:text-black transition duration-300"
             >
-              Our Menu
+              {t('hero_button_menu', 'Our Menu')}
             </Link>
 
             <Link
               to="/reservation"
               className="px-10 py-3 bg-white text-black uppercase tracking-widest hover:bg-gray-200 transition duration-300"
             >
-              Reservation
+              {t('hero_button_reservation', 'Reservation')}
             </Link>
           </div>
 

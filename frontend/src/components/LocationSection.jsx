@@ -8,7 +8,7 @@ export default function LocationSection() {
       <div className="max-w-6xl mx-auto px-6 text-center">
         {/* Heading */}
         <h2
-          className="text-4xl md:text-5xl font-serif font-thin mb-2 tracking-widest"
+          className="text-4xl md:text-5xl font-serif font-thin mb-4 tracking-widest"
           style={{
             fontFamily: 'Montserrat, sans-serif',
             letterSpacing: '0.1em',
@@ -18,7 +18,7 @@ export default function LocationSection() {
           {t('our_location', 'OUR LOCATION')}
         </h2>
 
-        {/* Line under heading */}
+        {/* Line */}
         <div className="w-24 h-px bg-gray-900 mx-auto mb-6 opacity-70"></div>
 
         {/* Description */}
@@ -37,73 +37,47 @@ export default function LocationSection() {
           )}
         </p>
 
-        {/* Opening Hours */}
-        <p
-          className="text-lg md:text-xl text-gray-600 mb-12"
-          style={{
-            fontFamily: 'Open Sans, sans-serif',
-            fontWeight: 400,
-            lineHeight: 1.8,
-            textTransform: 'uppercase',
-          }}
-        >
-          {t('opening_hours', 'Open from Tuesday to Sunday: 12:00 - 23:00')}
-        </p>
-
-        {/* Map & Address */}
+        {/* Map & Contact */}
         <div className="grid grid-cols-1 gap-8">
-          {/* Embedded Google Map */}
+          {/* Google Map */}
           <div className="w-full h-80 md:h-96 rounded-2xl overflow-hidden shadow-lg">
             <iframe
               title="Restaurant Location"
-              src="https://www.google.com/maps?q=52.368777,4.905456&output=embed"
+              src="https://www.google.com/maps?q=Heilig-Hartstraat+74+Sint-Amandsberg+9040+Gent+België&output=embed"
               className="w-full h-full border-0"
-              allowFullScreen=""
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
 
-          {/* Address + Contact Info */}
-          <div className="text-center md:text-left px-4 md:px-0">
+          {/* Contact */}
+          <div className="text-center md:text-left">
             <h3
-              className="text-2xl font-serif font-semibold mb-4 tracking-wide"
+              className="text-2xl mb-3"
               style={{
                 fontFamily: 'Montserrat, sans-serif',
-                textTransform: 'uppercase',
-              }}
-            >
-              {t('address', 'Address')}
-            </h3>
-            <p
-              className="text-gray-700 text-lg mb-4"
-              style={{ fontFamily: 'Open Sans, sans-serif', lineHeight: 1.8 }}
-            >
-              {t(
-                'restaurant_address',
-                'Restaurant Olijfje, 52.368777, 4.905456 (Amsterdam Area)'
-              )}
-            </p>
-
-            <h3
-              className="text-2xl font-serif font-semibold mb-4 tracking-wide"
-              style={{
-                fontFamily: 'Montserrat, sans-serif',
+                fontWeight: 400,
+                letterSpacing: '0.08em',
                 textTransform: 'uppercase',
               }}
             >
               {t('contact', 'Contact')}
             </h3>
+
             <p
-              className="text-gray-700 text-lg mb-6"
-              style={{ fontFamily: 'Open Sans, sans-serif', lineHeight: 1.8 }}
+              className="text-gray-700 text-lg mb-8"
+              style={{
+                fontFamily: 'Open Sans, sans-serif',
+                lineHeight: 1.8,
+                textTransform: 'uppercase',
+              }}
             >
-              {t('phone_number', 'Phone: +31 6 12345678')}
+              {t('phone_number', 'Phone: +32 4 12 34 56 78')}
             </p>
 
-            {/* Button to open Google Maps */}
+            {/* Google Maps Button */}
             <a
-              href="https://maps.google.com/?q=52.368777,4.905456"
+              href="https://maps.app.goo.gl/upMAhCjb8nKn58946"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block px-8 py-3 border border-gray-900 text-gray-900 uppercase tracking-widest hover:bg-gray-900 hover:text-white transition duration-300 rounded-lg"
