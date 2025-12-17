@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next'
 
 // Dish images
-import dish1 from '../assets/plat9.jpg'
+import dish1 from '../assets/dish9.jpg'
 import dish2 from '../assets/plat2.jpg'
 import dish3 from '../assets/plat3.jpg'
 import dish4 from '../assets/plat8.jpg'
