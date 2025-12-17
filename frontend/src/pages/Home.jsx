@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
-import heroBg from '../assets/plat3.JPG'
+import heroBg from '../assets/plat3.jpg'
 import SpecialDishes from '../components/SpecialDishes'
 import DrinksSection from '../components/DrinksSection'
 import BookTableSection from '../components/BookTableSection'

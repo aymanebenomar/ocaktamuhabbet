@@ -1,8 +1,8 @@
 import { useTranslation } from 'react-i18next'
 
 // Images
-import drinkImg from '../assets/drink.JPG'
-import plat3Img from '../assets/plat6.JPG'
+import drinkImg from '../assets/drink.jpg'
+import plat3Img from '../assets/plat6.jpg'
 
 export default function DrinksSection() {
   const { t } = useTranslation()
