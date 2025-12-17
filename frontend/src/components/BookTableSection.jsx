@@ -1,6 +1,9 @@
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 
+// Use environment variable, fallback to localhost for development
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3001/api'
+
 export default function BookTableSection() {
   const { t } = useTranslation()
 
@@ -25,7 +28,7 @@ export default function BookTableSection() {
     setMessage({ type: '', text: '' })
 
     try {
-      const response = await fetch('http://localhost:3001/api/bookings', {
+      const response = await fetch(`${API_URL}/bookings`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
