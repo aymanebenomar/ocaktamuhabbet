@@ -1,19 +1,20 @@
 {
-  "brand": "Ons Café",
+  "brand": "Ocakta Muhabbet",
   "home": "Home",
   "menu": "Menu",
-  "reservation": "Book a Table",
+  "reservation": "Reservation",
   "contact": "Contact",
-  "footer_text": "© 2025 Ons Café. All Rights Reserved.",
-  "welcome_message": "Welcome to our café",
+  "footer_text": "Ocakta Muhabbet. All rights reserved.",
+  "welcome_to": "Welcome to",
   "hero_subtitle": "Your Prestigious Lounge Restaurant",
   "our_special_dishes": "Our Special Dishes",
-  "explore_our_menu": "A culinary journey of exquisite flavors that are made for you",
+  "explore_our_menu": "A culinary journey of delicious flavors made especially for you",
   "all_special_dishes": "All Special Dishes",
   "drinks_menu": "Drinks Menu",
-  "refresh_with_our_drinks": "Refresh yourself with our exquisite beverages",
+  "refresh_with_our_drinks": "Refresh yourself with our delightful drinks",
+  "view_menu": "View Menu",
   "food_menu": "Food Menu",
-  "discover_our_food": "Explore our delicious culinary creations",
+  "discover_our_food": "Discover our delicious culinary creations",
   "book_a_table": "Book a Table",
   "reserve_your_spot": "Reserve your spot and enjoy our exquisite cuisine",
   "full_name": "Full Name",
@@ -23,20 +24,95 @@
   "date": "Date",
   "time": "Time",
   "people": "Number of People",
-  "enter_number_of_people": "Enter number of people",
+  "enter_number_of_people": "Enter the number of people",
   "book_table": "Book Now",
   "our_location": "Our Location",
   "visit_us_at": "Visit us and enjoy our exquisite cuisine in a warm and cozy atmosphere",
-  "opening_hours": "Open from Tuesday to Sunday: 12:00 - 23:00",
+  "opening_hours": "Opening Hours",
+  "opening_hours_text": "TUESDAY – SUNDAY 12:00 – 23:00",
   "address": "Address",
-  "restaurant_address": "Heilig-Hartstraat 74, Sint-Amandsberg, 9040 Gent, Belgium",
+  "restaurant_address": "Heilig-Hartstraat 74, Sint-Amandsberg 9040, Gent, Belgium",
   "contact_us": "Contact",
-  "phone": "Phone: +32 4 12 34 56 78",
+  "phone": "Phone: +32 0933 55095",
+  "email": "Email: Tezer@outlook.be",
   "open_in_google_maps": "Open in Google Maps",
-  "find_us_on": "Find us on",
+  "find_us_on": "Follow us on",
   "important_links": "Important Links",
   "assistance": "Assistance",
-  "email": "contact@restaurant.com",
   "instagram": "Instagram",
-  "tiktok": "TikTok"
+  "tiktok": "TikTok",
+  "our_menu": "Our Menu",
+  "book_now": "Book Now",
+  "our_food": "Our Food",
+  "view_food_menu": "View Food Menu",
+  "reservation_title": "Make a Reservation",
+  "hero_button_menu": "Our Menu",
+  "hero_button_reservation": "Reservation",
+  "dish_cold_meze": "Cold Meze",
+  "dish_tatli": "Tatlı",
+  "dish_kezartma_deniz_urunleri": "Grilled Seafood",
+  "dish_ahtapot": "Octopus",
+  "all": "All",
+
+  "menu_items": {
+    "soup": {
+      "title": "Soup of the Day",
+      "items": [
+        { "name": "Daily Soup", "price": 7.5 }
+      ]
+    },
+    "kids": {
+      "title": "Kids Menu",
+      "items": [
+        { "name": "Meatball burger + fries", "price": 9.5 },
+        { "name": "Chicken sticks + fries", "price": 9.5 },
+        { "name": "Nuggets + fries", "price": 9.5 }
+      ]
+    },
+    "starters": {
+      "title": "Starters",
+      "items": [
+        { "name": "Crispy Rolls", "price": 11.5 },
+        { "name": "Shrimp in Butter", "price": 19.5 },
+        { "name": "Stuffed Bulgur", "price": 8.5 },
+        { "name": "Fried Calamari", "price": 14.5 },
+        { "name": "Escargots", "price": 18.5 }
+      ]
+    },
+    "meze": {
+      "title": "Cold Meze",
+      "items": [
+        { "name": "Oysters (6 pcs)", "price": 24 },
+        { "name": "Tzatziki", "price": 7.5 },
+        { "name": "Haydari", "price": 7.5 },
+        { "name": "Spicy Dip", "price": 7.5 },
+        { "name": "Hummus", "price": 7.5 },
+        { "name": "Pinto Beans", "price": 8.5 },
+        { "name": "Veggie Medley", "price": 8.5 },
+        { "name": "Hot Yogurt", "price": 8.5 },
+        { "name": "Stuffed Leaves", "price": 8.5 },
+        { "name": "Russian Salad", "price": 9.5 },
+        { "name": "Cheese Plate", "price": 18.5 },
+        { "name": "Mixed Meze Plate", "price": 19.5 }
+      ]
+    },
+    "salads": {
+      "title": "Salads",
+      "items": [
+        { "name": "Salmon Salad", "price": 22.5 },
+        { "name": "Feta Salad", "price": 17.5 },
+        { "name": "Seasonal Salad", "price": 8.5 },
+        { "name": "Shepherd Salad", "price": 9.5 },
+        { "name": "Special House Salad", "price": 24.5 }
+      ]
+    },
+    "desserts": {
+      "title": "Desserts",
+      "items": [
+        { "name": "Rice Pudding", "price": 7.5 },
+        { "name": "Kunefe", "price": 9.5 },
+        { "name": "Ice Cream", "price": 6.5 }
+      ]
+    }
+  }
 }

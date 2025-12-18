@@ -1,44 +1,90 @@
+import { motion } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
+import Logo from '../assets/logo.png' // make sure the path is correct
 
 export default function LocationSection() {
   const { t } = useTranslation()
+
+  // Motion variant for fade-up
+  const fadeUpVariant = {
+    hidden: { opacity: 0, y: 40 },
+    visible: { opacity: 1, y: 0 },
+  }
 
   return (
     <section className="py-20 bg-gray-50 text-gray-900">
       <div className="max-w-6xl mx-auto px-6 text-center">
         {/* Heading */}
-        <h2
+        <motion.h2
           className="text-4xl md:text-5xl font-serif font-thin mb-4 tracking-widest"
           style={{
             fontFamily: 'Montserrat, sans-serif',
             letterSpacing: '0.1em',
             textTransform: 'uppercase',
           }}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.3 }}
+          variants={fadeUpVariant}
+          transition={{ duration: 1 }}
         >
           {t('our_location', 'OUR LOCATION')}
-        </h2>
+        </motion.h2>
 
         {/* Line */}
-        <div className="w-24 h-px bg-gray-900 mx-auto mb-6 opacity-70"></div>
+        <motion.div
+          className="w-24 h-px bg-gray-900 mx-auto mb-6 opacity-70"
+          initial={{ scaleX: 0, opacity: 0 }}
+          whileInView={{ scaleX: 1, opacity: 1 }}
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 1, delay: 0.2 }}
+        ></motion.div>
 
         {/* Description */}
-        <p
-          className="text-lg md:text-xl text-gray-600 mb-6"
+        <motion.p
+          className="text-lg md:text-xl text-gray-600 mb-8"
           style={{
             fontFamily: 'Open Sans, sans-serif',
             fontWeight: 400,
             lineHeight: 1.8,
             textTransform: 'uppercase',
           }}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.3 }}
+          variants={fadeUpVariant}
+          transition={{ duration: 1, delay: 0.3 }}
         >
           {t(
             'visit_us_at',
             'Visit us and enjoy our exquisite cuisine in a warm and cozy atmosphere'
           )}
-        </p>
+        </motion.p>
+
+        {/* Logo Image */}
+        <motion.div
+          className="w-48 h-48 md:w-64 md:h-64 mx-auto mb-8"
+          initial={{ opacity: 0, scale: 0.8 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 1, delay: 0.4 }}
+        >
+          <img
+            src={Logo}
+            alt="Logo"
+            className="w-full h-full object-contain"
+          />
+        </motion.div>
 
         {/* Map & Contact */}
-        <div className="grid grid-cols-1 gap-8">
+        <motion.div
+          className="grid grid-cols-1 gap-8"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.3 }}
+          variants={fadeUpVariant}
+          transition={{ duration: 1, delay: 0.5 }}
+        >
           {/* Google Map */}
           <div className="w-full h-80 md:h-96 rounded-2xl overflow-hidden shadow-lg">
             <iframe
@@ -72,7 +118,7 @@ export default function LocationSection() {
                 textTransform: 'uppercase',
               }}
             >
-              {t('phone_number', 'Phone: +32 4 12 34 56 78')}
+              {t('phone', 'Phone: +32 4 12 34 56 78')}
             </p>
 
             {/* Google Maps Button */}
@@ -85,7 +131,7 @@ export default function LocationSection() {
               {t('open_in_google_maps', 'Open in Google Maps')}
             </a>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   )

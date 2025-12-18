@@ -1,10 +1,10 @@
 {
-  "brand": "Ons Café",
+  "brand": "Ocakta Muhabbet",
   "home": "Home",
   "menu": "Menu",
   "reservation": "Reserveren",
   "contact": "Contact",
-  "footer_text": "Ons Café. Alle rechten voorbehouden.",
+  "footer_text": "Ocakta Muhabbet. Alle rechten voorbehouden.",
   "welcome_to": "Welkom bij",
   "hero_subtitle": "Uw prestigieuze lounge restaurant",
   "our_special_dishes": "Onze Speciale Gerechten",
@@ -33,8 +33,8 @@
   "address": "Adres",
   "restaurant_address": "Heilig-Hartstraat 74, Sint-Amandsberg 9040, Gent, België",
   "contact_us": "Contact",
-  "phone": "Telefoon: +32 4 12 34 56 78",
-  "email": "E-mail: contact@restaurant.com",
+  "phone": "Telefoon: +32 0933 55095",
+  "email": "E-mail: Tezer@outlook.be",
   "open_in_google_maps": "Open in Google Maps",
   "find_us_on": "Volg ons op",
   "important_links": "Belangrijke Links",
@@ -51,5 +51,68 @@
   "dish_cold_meze": "Koude Mezze",
   "dish_tatli": "Tatlı",
   "dish_kezartma_deniz_urunleri": "Gegrilde Zeevruchten",
-  "dish_ahtapot": "Inktvis"
+  "dish_ahtapot": "Inktvis",
+  "all": "Alle",
+
+  "menu_items": {
+    "soup": {
+      "title": "Soep van de Dag",
+      "items": [
+        { "name": "Dagsoep", "price": 7.5 }
+      ]
+    },
+    "kids": {
+      "title": "Kindermenu",
+      "items": [
+        { "name": "Gehaktbal burger + friet", "price": 9.5 },
+        { "name": "Kipstick + friet", "price": 9.5 },
+        { "name": "Nuggets + friet", "price": 9.5 }
+      ]
+    },
+    "starters": {
+      "title": "Voorgerechten",
+      "items": [
+        { "name": "Crispy Rolls", "price": 11.5 },
+        { "name": "Garnalen in Boter", "price": 19.5 },
+        { "name": "Gevulde Bulgur", "price": 8.5 },
+        { "name": "Gefrituurde Inktvis", "price": 14.5 },
+        { "name": "Slakken", "price": 18.5 }
+      ]
+    },
+    "meze": {
+      "title": "Koude Meze",
+      "items": [
+        { "name": "Oesters (6 st)", "price": 24 },
+        { "name": "Tzatziki", "price": 7.5 },
+        { "name": "Haydari", "price": 7.5 },
+        { "name": "Spicy Dip", "price": 7.5 },
+        { "name": "Hummus", "price": 7.5 },
+        { "name": "Pinto Bonen", "price": 8.5 },
+        { "name": "Saksuka", "price": 8.5 },
+        { "name": "Hete Yogurt", "price": 8.5 },
+        { "name": "Gevulde Bladeren", "price": 8.5 },
+        { "name": "Russische Salade", "price": 9.5 },
+        { "name": "Kaasplank", "price": 18.5 },
+        { "name": "Gemengde Meze", "price": 19.5 }
+      ]
+    },
+    "salads": {
+      "title": "Salades",
+      "items": [
+        { "name": "Zalm Salade", "price": 22.5 },
+        { "name": "Feta Salade", "price": 17.5 },
+        { "name": "Seizoenssalade", "price": 8.5 },
+        { "name": "Herderssalade", "price": 9.5 },
+        { "name": "Speciale Salade", "price": 24.5 }
+      ]
+    },
+    "desserts": {
+      "title": "Desserts",
+      "items": [
+        { "name": "Rijstpudding", "price": 7.5 },
+        { "name": "Kunefe", "price": 9.5 },
+        { "name": "Ijs", "price": 6.5 }
+      ]
+    }
+  }
 }

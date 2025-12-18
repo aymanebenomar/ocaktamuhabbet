@@ -18,10 +18,20 @@ export default function Footer() {
             {t('find_us_on', 'Find us on')}
           </h3>
           <div className="flex justify-center gap-6 text-xl">
-            <a href="#" className="hover:opacity-70 transition">
+            <a
+              href="https://www.instagram.com/ocakta_muhabbet_restaurant?igsh=MXRzbTQ3eHVnM3Vubg=="
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:opacity-70 transition"
+            >
               <FontAwesomeIcon icon={faInstagram} />
             </a>
-            <a href="#" className="hover:opacity-70 transition">
+            <a
+              href="https://www.tiktok.com/@muhabbetgent12?_r=1&_t=ZS-92KBl5Y4Rzr"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:opacity-70 transition"
+            >
               <FontAwesomeIcon icon={faTiktok} />
             </a>
           </div>
@@ -42,7 +52,10 @@ export default function Footer() {
             className="uppercase tracking-wide text-sm leading-relaxed"
             style={{ fontFamily: 'Open Sans, sans-serif' }}
             dangerouslySetInnerHTML={{
-              __html: t('restaurant_address', 'Heilig-Hartstraat 74<br />Sint-Amandsberg 9040<br />Gent, België')
+              __html: t(
+                'restaurant_address',
+                'Heilig-Hartstraat 74<br />Sint-Amandsberg 9040<br />Gent, België'
+              ),
             }}
           />
         </div>
@@ -79,22 +92,22 @@ export default function Footer() {
           </h3>
           <div className="flex justify-center items-center gap-3 text-sm">
             <FontAwesomeIcon icon={faPhone} />
-            <span>{t('phone', '+32 4 12 34 56 78')}</span>
+            <span>{t('phone', '+32 0933 55095')}</span>
           </div>
           <div className="flex justify-center items-center gap-3 text-sm">
             <FontAwesomeIcon icon={faEnvelope} />
-            <span>{t('email', 'contact@restaurant.com')}</span>
+            <span>{t('email', 'Tezer@outlook.be')}</span>
           </div>
         </div>
 
         {/* RESTAURANT NAME INSTEAD OF LOGO */}
         <div className="flex items-center justify-center gap-6 my-14">
           <div className="flex-1 h-px bg-white/30"></div>
-          <h2 
+          <h2
             className="text-2xl font-serif tracking-widest uppercase"
             style={{ fontFamily: 'Montserrat, sans-serif' }}
           >
-            {t('restaurant_name', 'OCAK TAMUHABBET')}
+            OCAKTA MUHABBET
           </h2>
           <div className="flex-1 h-px bg-white/30"></div>
         </div>

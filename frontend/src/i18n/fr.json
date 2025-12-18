@@ -1,21 +1,22 @@
 {
-  "brand": "Ons Café",
+  "brand": "Ocakta Muhabbet",
   "home": "Accueil",
   "menu": "Menu",
-  "reservation": "Réserver",
+  "reservation": "Réservation",
   "contact": "Contact",
-  "footer_text": "© 2025 Ons Café. Tous droits réservés.",
-  "welcome_message": "Bienvenue dans notre café",
-  "hero_subtitle": "Votre restaurant lounge prestigieux",
+  "footer_text": "Ocakta Muhabbet. Tous droits réservés.",
+  "welcome_to": "Bienvenue à",
+  "hero_subtitle": "Votre prestigieux restaurant lounge",
   "our_special_dishes": "Nos Plats Spéciaux",
-  "explore_our_menu": "Un voyage culinaire aux saveurs exquises préparées pour vous",
+  "explore_our_menu": "Un voyage culinaire aux saveurs délicieuses spécialement pour vous",
   "all_special_dishes": "Tous les Plats Spéciaux",
   "drinks_menu": "Menu des Boissons",
   "refresh_with_our_drinks": "Rafraîchissez-vous avec nos délicieuses boissons",
+  "view_menu": "Voir le Menu",
   "food_menu": "Menu Alimentaire",
   "discover_our_food": "Découvrez nos délicieuses créations culinaires",
   "book_a_table": "Réserver une Table",
-  "reserve_your_spot": "Réservez votre place et profitez de notre délicieuse cuisine",
+  "reserve_your_spot": "Réservez votre place et profitez de notre cuisine raffinée",
   "full_name": "Nom Complet",
   "enter_full_name": "Entrez votre nom complet",
   "phone_number": "Numéro de Téléphone",
@@ -24,19 +25,94 @@
   "time": "Heure",
   "people": "Nombre de Personnes",
   "enter_number_of_people": "Entrez le nombre de personnes",
-  "book_table": "Réserver Maintenant",
+  "book_table": "Réserver",
   "our_location": "Notre Emplacement",
-  "visit_us_at": "Venez nous rendre visite et profitez de notre délicieuse cuisine dans une ambiance chaleureuse",
-  "opening_hours": "Ouvert du mardi au dimanche : 12:00 - 23:00",
+  "visit_us_at": "Venez nous rendre visite et profitez de notre cuisine raffinée dans une atmosphère chaleureuse et conviviale",
+  "opening_hours": "Heures d'Ouverture",
+  "opening_hours_text": "MARDI – DIMANCHE 12:00 – 23:00",
   "address": "Adresse",
-  "restaurant_address": "Heilig-Hartstraat 74, Sint-Amandsberg, 9040 Gand, Belgique",
+  "restaurant_address": "Heilig-Hartstraat 74, Sint-Amandsberg 9040, Gand, Belgique",
   "contact_us": "Contact",
-  "phone": "Téléphone : +32 4 12 34 56 78",
+  "phone": "Téléphone: +32 0933 55095",
+  "email": "E-mail: Tezer@outlook.be",
   "open_in_google_maps": "Ouvrir dans Google Maps",
   "find_us_on": "Suivez-nous sur",
   "important_links": "Liens Importants",
   "assistance": "Assistance",
-  "email": "contact@restaurant.com",
   "instagram": "Instagram",
-  "tiktok": "TikTok"
+  "tiktok": "TikTok",
+  "our_menu": "Notre Menu",
+  "book_now": "Réserver",
+  "our_food": "Notre Nourriture",
+  "view_food_menu": "Voir le Menu Alimentaire",
+  "reservation_title": "Faire une Réservation",
+  "hero_button_menu": "Notre Menu",
+  "hero_button_reservation": "Réservation",
+  "dish_cold_meze": "Mezze Froid",
+  "dish_tatli": "Tatlı",
+  "dish_kezartma_deniz_urunleri": "Fruits de Mer Grillés",
+  "dish_ahtapot": "Poulpe",
+  "all": "Tous",
+
+  "menu_items": {
+    "soup": {
+      "title": "Soupe du Jour",
+      "items": [
+        { "name": "Soupe du Jour", "price": 7.5 }
+      ]
+    },
+    "kids": {
+      "title": "Menu Enfants",
+      "items": [
+        { "name": "Burger Boulette + frites", "price": 9.5 },
+        { "name": "Bâtonnets de Poulet + frites", "price": 9.5 },
+        { "name": "Nuggets + frites", "price": 9.5 }
+      ]
+    },
+    "starters": {
+      "title": "Entrées",
+      "items": [
+        { "name": "Rouleaux Croustillants", "price": 11.5 },
+        { "name": "Crevettes au Beurre", "price": 19.5 },
+        { "name": "Boulgour Farci", "price": 8.5 },
+        { "name": "Calamars Frits", "price": 14.5 },
+        { "name": "Escargots", "price": 18.5 }
+      ]
+    },
+    "meze": {
+      "title": "Mezze Froid",
+      "items": [
+        { "name": "Huîtres (6 pcs)", "price": 24 },
+        { "name": "Tzatziki", "price": 7.5 },
+        { "name": "Haydari", "price": 7.5 },
+        { "name": "Sauce Épicée", "price": 7.5 },
+        { "name": "Houmous", "price": 7.5 },
+        { "name": "Haricots Pinto", "price": 8.5 },
+        { "name": "Légumes Méli-Mélo", "price": 8.5 },
+        { "name": "Yaourt Chaud", "price": 8.5 },
+        { "name": "Feuilles Farcies", "price": 8.5 },
+        { "name": "Salade Russe", "price": 9.5 },
+        { "name": "Plateau de Fromages", "price": 18.5 },
+        { "name": "Assiette de Mezze Mixte", "price": 19.5 }
+      ]
+    },
+    "salads": {
+      "title": "Salades",
+      "items": [
+        { "name": "Salade de Saumon", "price": 22.5 },
+        { "name": "Salade Feta", "price": 17.5 },
+        { "name": "Salade de Saison", "price": 8.5 },
+        { "name": "Salade du Berger", "price": 9.5 },
+        { "name": "Salade Spéciale", "price": 24.5 }
+      ]
+    },
+    "desserts": {
+      "title": "Desserts",
+      "items": [
+        { "name": "Riz au Lait", "price": 7.5 },
+        { "name": "Kunefe", "price": 9.5 },
+        { "name": "Glace", "price": 6.5 }
+      ]
+    }
+  }
 }
