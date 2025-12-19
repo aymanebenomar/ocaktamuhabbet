@@ -49,10 +49,12 @@
   "hero_button_menu": "Ons Menu",
   "hero_button_reservation": "Reserveren",
   "dish_cold_meze": "Koude Mezze",
-  "dish_tatli": "Tatlı",
+  "dish_tatli": "Desserts",
   "dish_kezartma_deniz_urunleri": "Gegrilde Zeevruchten",
   "dish_ahtapot": "Inktvis",
   "all": "Alle",
+  "call": "Bellen",
+  "email_button": "E-mail",
 
   "menu_items": {
     "soup": {
@@ -79,10 +81,10 @@
         { "name": "Slakken", "price": 18.5 }
       ]
     },
-    "meze": {
+    "cold-meze": {
       "title": "Koude Meze",
       "items": [
-        { "name": "Oesters (6 st)", "price": 24 },
+        { "name": "Oesters (6 stuks)", "price": 24 },
         { "name": "Tzatziki", "price": 7.5 },
         { "name": "Haydari", "price": 7.5 },
         { "name": "Spicy Dip", "price": 7.5 },
@@ -106,12 +108,150 @@
         { "name": "Speciale Salade", "price": 24.5 }
       ]
     },
+    "mussels": {
+      "title": "Mosselen",
+      "items": [
+        { "name": "Belgische mosselen", "price": 26.5 },
+        { "name": "Knoflookmosselen", "price": 27.5 },
+        { "name": "Romige mosselen", "price": 28.5 },
+        { "name": "Cozze alla Tarantina", "price": 26.5 }
+      ]
+    },
+    "lobster": {
+      "title": "Kreeft",
+      "items": [
+        { "name": "Gegrilde kreeft", "price": 45.0 },
+        { "name": "Kreeft Thermidor", "price": 49.0 },
+        { "name": "Gebakken knoflookkreeft", "price": 47.0 }
+      ]
+    },
+    "paella": {
+      "title": "Paella",
+      "items": [
+        { "name": "Vispaella (1 persoon)", "price": 29.5 },
+        { "name": "Vispaella (2 personen)", "price": 55.0 }
+      ]
+    },
+    "side-dishes": {
+      "title": "Bijgerechten",
+      "items": [
+        { "name": "Friet", "price": 5.5 },
+        { "name": "Aardappelpuree", "price": 6.5 },
+        { "name": "Rijst", "price": 5.5 },
+        { "name": "Gegrilde groenten", "price": 6.5 },
+        { "name": "Gebakken asperges", "price": 8.5 }
+      ]
+    },
+    "fish": {
+      "title": "Visgerechten",
+      "items": [
+        { "name": "Zeebaars", "price": 29.5 },
+        { "name": "Goudbrasem", "price": 27.5 },
+        { "name": "Zalm", "price": 28.5 },
+        { "name": "Tonijn spies", "price": 27.5 },
+        { "name": "Wijting", "price": 26.5 },
+        { "name": "Tong", "price": 34.5 }
+      ]
+    },
+    "octopus": {
+      "title": "Octopus",
+      "items": [
+        { "name": "Gegrilde octopus", "price": 32.5 },
+        { "name": "Octopus op aardappelbed", "price": 34.5 },
+        { "name": "Gebakken octopus", "price": 31.5 }
+      ]
+    },
+    "grill": {
+      "title": "Grill & Kebab's",
+      "items": [
+        { "name": "Rundvleesspies", "price": 26.5 },
+        { "name": "Kippenspies", "price": 22.5 },
+        { "name": "Adana kebab", "price": 24.5 },
+        { "name": "Urfa kebab", "price": 23.5 },
+        { "name": "Çökertme kebab", "price": 28.5 },
+        { "name": "Beyti wrap", "price": 26.5 },
+        { "name": "Ali Nazik (lam)", "price": 29.5 },
+        { "name": "Ribeye steak", "price": 34.5 },
+        { "name": "Gemengde grill", "price": 34.5 }
+      ]
+    },
+    "raki": {
+      "title": "Raki",
+      "items": [
+        { "name": "Yeni Rakı Dubbel", "price": 6.0 },
+        { "name": "Yeni Rakı 35 cl", "price": 45.0 },
+        { "name": "Yeni Rakı 70 cl", "price": 70.0 },
+        { "name": "Tekirdağ Rakı Dubbel", "price": 8.0 },
+        { "name": "Tekirdağ Rakı 35 cl", "price": 65.0 },
+        { "name": "Tekirdağ Rakı 70 cl", "price": 100.0 },
+        { "name": "Beylerbeyi Rakı Dubbel", "price": 8.5 },
+        { "name": "Beylerbeyi Rakı 35 cl", "price": 65.0 },
+        { "name": "Beylerbeyi Rakı 70 cl", "price": 120.0 }
+      ]
+    },
+    "wines": {
+      "title": "Wijnen",
+      "items": [
+        { "name": "Witte wijn (glas)", "price": 6.5 },
+        { "name": "Rode wijn (glas)", "price": 6.0 },
+        { "name": "Rosé wijn (glas)", "price": 6.5 },
+        { "name": "Cava (glas)", "price": 7.0 },
+        { "name": "Wijn (fles)", "price": 24.0 },
+        { "name": "Cava (fles)", "price": 37.0 }
+      ]
+    },
+    "cocktails": {
+      "title": "Cocktails",
+      "items": [
+        { "name": "Espresso Martini", "price": 12.0 },
+        { "name": "Spritz", "price": 11.0 },
+        { "name": "New York Sour", "price": 17.0 },
+        { "name": "Pink Lady", "price": 9.0 }
+      ]
+    },
+    "non-alcoholic-cocktails": {
+      "title": "Alcoholvrije Cocktails",
+      "items": [
+        { "name": "Strawberry Blue Mocktail", "price": 6.0 },
+        { "name": "Mojito Mocktail", "price": 9.0 },
+        { "name": "Virgin Pina Colada", "price": 9.0 }
+      ]
+    },
+    "beers": {
+      "title": "Bieren",
+      "items": [
+        { "name": "Jupiler / Hoegaarden", "price": 3.5 },
+        { "name": "Duvel", "price": 6.0 }
+      ]
+    },
+    "hot-drinks": {
+      "title": "Warme Dranken",
+      "items": [
+        { "name": "Thee", "price": 3.0 },
+        { "name": "Turkse koffie", "price": 3.5 },
+        { "name": "Espresso", "price": 3.0 },
+        { "name": "Koffie", "price": 3.0 }
+      ]
+    },
+    "drinks": {
+      "title": "Dranken",
+      "items": [
+        { "name": "Water", "price": 2 },
+        { "name": "Ayran (yoghurtdrank)", "price": 2 },
+        { "name": "Soda", "price": 2.5 },
+        { "name": "Coca Cola / Zero", "price": 2.5 },
+        { "name": "Fanta", "price": 2.5 },
+        { "name": "Sprite", "price": 2.5 },
+        { "name": "Red Bull", "price": 3 }
+      ]
+    },
     "desserts": {
       "title": "Desserts",
       "items": [
         { "name": "Rijstpudding", "price": 7.5 },
-        { "name": "Kunefe", "price": 9.5 },
-        { "name": "Ijs", "price": 6.5 }
+        { "name": "Künefe (kaaspastei)", "price": 9.5 },
+        { "name": "IJs (verschillend)", "price": 6.5 },
+        { "name": "Aardbeienmousse", "price": 7.5 }
       ]
     }
   }

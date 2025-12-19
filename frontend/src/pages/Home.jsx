@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
@@ -12,6 +12,10 @@ import LocationSection from '../components/LocationSection'
 export default function Home() {
   const { t } = useTranslation()
   const [menuOpen, setMenuOpen] = useState(false)
+
+   useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
 
   return (
     <section className="text-white">

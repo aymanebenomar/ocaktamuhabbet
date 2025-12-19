@@ -1,19 +1,32 @@
 import React, { useMemo, useState } from 'react';
 import { Search, Star, ChevronDown } from 'lucide-react';
 import { motion } from 'framer-motion';
-
-
 import { useTranslation } from 'react-i18next';
-import Plat7 from '../assets/plat10.jpg';
-import Soup from '../assets/soup.jpg';
-import Fish from '../assets/plat3.jpg';
-import Ahtapot from '../assets/ahtapot.jpg';
-import ColdMeze from '../assets/coldmeze.jpg';
-import Drink2 from '../assets/drinkk.jpg';
-import Kabab from '../assets/kabab.jpg';
-import Salad from '../assets/salade.jpg';
 import { useEffect } from 'react';
 
+// Import existing images
+import Plat7 from '../assets/plat10.jpg';
+import Soup from '../assets/soup.jpg';
+import Fish from '../assets/fish4.jpg';
+import Ahtapot from '../assets/ahtapot.jpg';
+import ColdMeze from '../assets/coldmeze.jpg';
+import Kabab from '../assets/kabab.jpg';
+import Salad from '../assets/salade.jpg';
+
+// Import the new image for the sections you're adding
+import Plat10 from '../assets/plat10.jpg';
+import konafa from '../assets/plat2.jpg';
+import starters from '../assets/plat20.jpg';
+import kind from '../assets/kinder.jpg';
+import Drinks from '../assets/drinks.jpg';
+import moules from '../assets/moules.jpg';
+import istakos from '../assets/istakoz.jpg';
+import lezetler from '../assets/lezzetler.jpg';
+import drink3 from '../assets/drinkk.jpg';
+import wines from '../assets/wines.jpg';
+import ndrink from '../assets/drink.jpg';
+import beer from '../assets/beer.jpg';
+import caffe from '../assets/plat4.jpg';
 /* ===================== FULL MENU DATA ===================== */
 const MENU_DATA = [
   {
@@ -25,6 +38,7 @@ const MENU_DATA = [
   {
     id: 'kids',
     title: { tr: 'ÇOCUK MENÜLERİ', en: 'Kids Menu', nl: 'Kindermenu', fr: 'Menu Enfants' },
+    image: kind,
     items: [
       { name: { tr: 'Köfteburger + patates', en: 'Meatball burger + fries', nl: 'Gehaktbal burger + friet', fr: 'Burger de boulettes + frites' }, price: 9.5 },
       { name: { tr: 'Kipstick + patates', en: 'Chicken sticks + fries', nl: 'Kipstick + friet', fr: 'Bâtonnets de poulet + frites' }, price: 9.5 },
@@ -34,6 +48,7 @@ const MENU_DATA = [
   {
     id: 'starters',
     title: { tr: 'ARA SICAKLAR', en: 'STARTERS', nl: 'VOORGERECHTEN', fr: 'ENTRÉES' },
+    image: starters,
     items: [
       { name: { tr: 'Sigara böreği', en: 'Cigar pastry rolls', nl: 'Sigaretpasteitjes', fr: 'Rouleaux de pâte feuilletée' }, price: 11.5 },
       { name: { tr: 'Tereyağında karides', en: 'Shrimp in butter', nl: 'Garnalen in boter', fr: 'Crevettes au beurre' }, price: 19.5 },
@@ -71,6 +86,48 @@ const MENU_DATA = [
       { name: { tr: 'Mevsim Salatası', en: 'Seasonal Salad', nl: 'Seizoenssalade', fr: 'Salade de Saison' }, price: 8.5 },
       { name: { tr: 'Çoban Salatası', en: 'Shepherd Salad', nl: 'Herderssalade', fr: 'Salade du Berger' }, price: 9.5 },
       { name: { tr: 'Muhabbet Special Salata', en: 'Special House Salad', nl: 'Speciale Salade', fr: 'Salade Spéciale' }, price: 24.5 }
+    ]
+  },
+  {
+    id: 'mussels',
+    title: { tr: 'MIDYELER', en: 'MUSSELS', nl: 'MOSSELEN', fr: 'MOULES' },
+    image: moules,
+    items: [
+      { name: { tr: 'Belçika midyesi', en: 'Belgian mussels', nl: 'Belgische mosselen', fr: 'Moules belges' }, price: 26.5 },
+      { name: { tr: 'Sarımsaklı midye', en: 'Garlic mussels', nl: 'Knoflookmosselen', fr: 'Moules à l\'ail' }, price: 27.5 },
+      { name: { tr: 'Kremalı midye', en: 'Creamy mussels', nl: 'Romige mosselen', fr: 'Moules à la crème' }, price: 28.5 },
+      { name: { tr: 'Cozze alla Tarantina', en: 'Cozze alla Tarantina', nl: 'Cozze alla Tarantina', fr: 'Cozze alla Tarantina' }, price: 26.5 }
+    ]
+  },
+  {
+    id: 'lobster',
+    title: { tr: 'ISTAKOZ', en: 'LOBSTER', nl: 'KREEFT', fr: 'HOMARD' },
+    image: istakos,
+    items: [
+      { name: { tr: 'Izgara istakoz', en: 'Grilled lobster', nl: 'Gegrilde kreeft', fr: 'Homard grillé' }, price: 45.0 },
+      { name: { tr: 'Istakoz Thermidor', en: 'Lobster Thermidor', nl: 'Kreeft Thermidor', fr: 'Homard Thermidor' }, price: 49.0 },
+      { name: { tr: 'Sarımsaklı istakoz tava', en: 'Fried garlic lobster', nl: 'Gebakken knoflookkreeft', fr: 'Homard frit à l\'ail' }, price: 47.0 }
+    ]
+  },
+  {
+    id: 'paella',
+    title: { tr: 'PAELLA', en: 'PAELLA', nl: 'PAELLA', fr: 'PAELLA' },
+    image: Plat10,
+    items: [
+      { name: { tr: 'Balıklı Paella (1 kişilik)', en: 'Fish Paella (1 person)', nl: 'Vispaella (1 persoon)', fr: 'Paella au poisson (1 personne)' }, price: 29.5 },
+      { name: { tr: 'Balıklı Paella (2 kişilik)', en: 'Fish Paella (2 persons)', nl: 'Vispaella (2 personen)', fr: 'Paella au poisson (2 personnes)' }, price: 55.0 }
+    ]
+  },
+  {
+    id: 'side-dishes',
+    title: { tr: 'YAN LEZZETLER', en: 'SIDE DISHES', nl: 'BIJGERECHTEN', fr: 'ACCOMPAGNEMENTS' },
+    image: lezetler,
+    items: [
+      { name: { tr: 'Patates kızartması', en: 'French fries', nl: 'Friet', fr: 'Frites' }, price: 5.5 },
+      { name: { tr: 'Patates püresi', en: 'Mashed potatoes', nl: 'Aardappelpuree', fr: 'Purée de pommes de terre' }, price: 6.5 },
+      { name: { tr: 'Pilav', en: 'Rice', nl: 'Rijst', fr: 'Riz' }, price: 5.5 },
+      { name: { tr: 'Izgara sebze', en: 'Grilled vegetables', nl: 'Gegrilde groenten', fr: 'Légumes grillés' }, price: 6.5 },
+      { name: { tr: 'Fırında kuşkonmaz', en: 'Baked asparagus', nl: 'Gebakken asperges', fr: 'Asperges au four' }, price: 8.5 }
     ]
   },
   {
@@ -114,9 +171,78 @@ const MENU_DATA = [
     ]
   },
   {
+    id: 'raki',
+    title: { tr: 'RAKI', en: 'RAKI', nl: 'RAKI', fr: 'RAKI' },
+    image: drink3,
+    items: [
+      { name: { tr: 'Yeni Rakı Duble', en: 'Yeni Rakı Double', nl: 'Yeni Rakı Dubbel', fr: 'Yeni Rakı Double' }, price: 6.0 },
+      { name: { tr: 'Yeni Rakı 35 cl', en: 'Yeni Rakı 35 cl', nl: 'Yeni Rakı 35 cl', fr: 'Yeni Rakı 35 cl' }, price: 45.0 },
+      { name: { tr: 'Yeni Rakı 70 cl', en: 'Yeni Rakı 70 cl', nl: 'Yeni Rakı 70 cl', fr: 'Yeni Rakı 70 cl' }, price: 70.0 },
+      { name: { tr: 'Tekirdağ Rakı Duble', en: 'Tekirdağ Rakı Double', nl: 'Tekirdağ Rakı Dubbel', fr: 'Tekirdağ Rakı Double' }, price: 8.0 },
+      { name: { tr: 'Tekirdağ Rakı 35 cl', en: 'Tekirdağ Rakı 35 cl', nl: 'Tekirdağ Rakı 35 cl', fr: 'Tekirdağ Rakı 35 cl' }, price: 65.0 },
+      { name: { tr: 'Tekirdağ Rakı 70 cl', en: 'Tekirdağ Rakı 70 cl', nl: 'Tekirdağ Rakı 70 cl', fr: 'Tekirdağ Rakı 70 cl' }, price: 100.0 },
+      { name: { tr: 'Beylerbeyi Rakı Duble', en: 'Beylerbeyi Rakı Double', nl: 'Beylerbeyi Rakı Dubbel', fr: 'Beylerbeyi Rakı Double' }, price: 8.5 },
+      { name: { tr: 'Beylerbeyi Rakı 35 cl', en: 'Beylerbeyi Rakı 35 cl', nl: 'Beylerbeyi Rakı 35 cl', fr: 'Beylerbeyi Rakı 35 cl' }, price: 65.0 },
+      { name: { tr: 'Beylerbeyi Rakı 70 cl', en: 'Beylerbeyi Rakı 70 cl', nl: 'Beylerbeyi Rakı 70 cl', fr: 'Beylerbeyi Rakı 70 cl' }, price: 120.0 }
+    ]
+  },
+  {
+    id: 'wines',
+    title: { tr: 'ŞARAPLAR', en: 'WINES', nl: 'WIJNEN', fr: 'VINS' },
+    image: wines,
+    items: [
+      { name: { tr: 'Beyaz şarap (kadeh)', en: 'White wine (glass)', nl: 'Witte wijn (glas)', fr: 'Vin blanc (verre)' }, price: 6.5 },
+      { name: { tr: 'Kırmızı şarap (kadeh)', en: 'Red wine (glass)', nl: 'Rode wijn (glas)', fr: 'Vin rouge (verre)' }, price: 6.0 },
+      { name: { tr: 'Roze şarap (kadeh)', en: 'Rosé wine (glass)', nl: 'Rosé wijn (glas)', fr: 'Vin rosé (verre)' }, price: 6.5 },
+      { name: { tr: 'Cava (kadeh)', en: 'Cava (glass)', nl: 'Cava (glas)', fr: 'Cava (verre)' }, price: 7.0 },
+      { name: { tr: 'Şarap (şişe)', en: 'Wine (bottle)', nl: 'Wijn (fles)', fr: 'Vin (bouteille)' }, price: 24.0 },
+      { name: { tr: 'Cava (şişe)', en: 'Cava (bottle)', nl: 'Cava (fles)', fr: 'Cava (bouteille)' }, price: 37.0 }
+    ]
+  },
+  {
+    id: 'cocktails',
+    title: { tr: 'KOKTEYLLER', en: 'COCKTAILS', nl: 'COCKTAILS', fr: 'COCKTAILS' },
+    items: [
+      { name: { tr: 'Espresso Martini', en: 'Espresso Martini', nl: 'Espresso Martini', fr: 'Espresso Martini' }, price: 12.0 },
+      { name: { tr: 'Spritz', en: 'Spritz', nl: 'Spritz', fr: 'Spritz' }, price: 11.0 },
+      { name: { tr: 'New York Sour', en: 'New York Sour', nl: 'New York Sour', fr: 'New York Sour' }, price: 17.0 },
+      { name: { tr: 'Pink Lady', en: 'Pink Lady', nl: 'Pink Lady', fr: 'Pink Lady' }, price: 9.0 }
+    ]
+  },
+  {
+    id: 'non-alcoholic-cocktails',
+    title: { tr: 'ALKOLSÜZ KOKTEYLLER', en: 'NON-ALCOHOLIC COCKTAILS', nl: 'ALCOHOLVRIJE COCKTAILS', fr: 'COCKTAILS SANS ALCOOL' },
+    image: ndrink,
+    items: [
+      { name: { tr: 'Strawberry Blue Mocktail', en: 'Strawberry Blue Mocktail', nl: 'Strawberry Blue Mocktail', fr: 'Mocktail Fraise Bleue' }, price: 6.0 },
+      { name: { tr: 'Mojito Mocktail', en: 'Mojito Mocktail', nl: 'Mojito Mocktail', fr: 'Mocktail Mojito' }, price: 9.0 },
+      { name: { tr: 'Virgin Pina Colada', en: 'Virgin Pina Colada', nl: 'Virgin Pina Colada', fr: 'Pina Colada sans alcool' }, price: 9.0 }
+    ]
+  },
+  {
+    id: 'beers',
+    title: { tr: 'BIEREN', en: 'BEERS', nl: 'BIEREN', fr: 'BIÈRES' },
+    image: beer,
+    items: [
+      { name: { tr: 'Jupiler / Hoegaarden', en: 'Jupiler / Hoegaarden', nl: 'Jupiler / Hoegaarden', fr: 'Jupiler / Hoegaarden' }, price: 3.5 },
+      { name: { tr: 'Duvel', en: 'Duvel', nl: 'Duvel', fr: 'Duvel' }, price: 6.0 }
+    ]
+  },
+  {
+    id: 'hot-drinks',
+    title: { tr: 'SICAK İÇECEKLER', en: 'HOT DRINKS', nl: 'WARME DRANKEN', fr: 'BOISSONS CHAUDES' },
+    image: caffe,
+    items: [
+      { name: { tr: 'Çay / Tea', en: 'Tea', nl: 'Thee', fr: 'Thé' }, price: 3.0 },
+      { name: { tr: 'Türk kahvesi', en: 'Turkish coffee', nl: 'Turkse koffie', fr: 'Café turc' }, price: 3.5 },
+      { name: { tr: 'Espresso', en: 'Espresso', nl: 'Espresso', fr: 'Expresso' }, price: 3.0 },
+      { name: { tr: 'Koffie', en: 'Coffee', nl: 'Koffie', fr: 'Café' }, price: 3.0 }
+    ]
+  },
+  {
     id: 'drinks',
     title: { tr: 'İÇECEKLER', en: 'DRINKS', nl: 'DRANKEN', fr: 'BOISSONS' },
-    image: Drink2,
+    image: Drinks,
     items: [
       { name: { tr: 'Su / Water', en: 'Water', nl: 'Water', fr: 'Eau' }, price: 2 },
       { name: { tr: 'Ayran', en: 'Ayran (yogurt drink)', nl: 'Ayran (yoghurtdrank)', fr: 'Ayran (boisson au yaourt)' }, price: 2 },
@@ -130,6 +256,7 @@ const MENU_DATA = [
   {
     id: 'desserts',
     title: { tr: 'TATLILAR', en: 'DESSERTS', nl: 'DESSERTS', fr: 'DESSERTS' },
+    image: konafa,
     items: [
       { name: { tr: 'Sütlaç', en: 'Rice pudding', nl: 'Rijstpudding', fr: 'Pudding au riz' }, price: 7.5 },
       { name: { tr: 'Künefe', en: 'Künefe (cheese pastry)', nl: 'Künefe (kaaspastei)', fr: 'Künefe (pâtisserie au fromage)' }, price: 9.5 },
@@ -138,10 +265,6 @@ const MENU_DATA = [
     ]
   }
 ];
-
-
-
-
 
 /* ===================== MENU ITEM ===================== */
 const MenuItem = ({ item, lang }) => (
@@ -160,6 +283,7 @@ const MenuItem = ({ item, lang }) => (
     </span>
   </motion.div>
 );
+
 /* ===================== MENU COMPONENT ===================== */
 export default function Menu() {
   const { i18n, t } = useTranslation();
@@ -168,8 +292,7 @@ export default function Menu() {
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
-
-   useEffect(() => {
+  useEffect(() => {
     // Scroll to top when component mounts
     window.scrollTo(0, 0);
   }, []);

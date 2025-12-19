@@ -73,7 +73,7 @@ export default function BookTableSection() {
                 href="tel:+32093355095"
                 className="px-6 py-2 bg-white text-black border border-gray-900 rounded-lg text-sm uppercase tracking-widest hover:bg-gray-100 transition"
               >
-                Call
+                {t('call', 'Call')}
               </a>
             </div>
 
@@ -87,7 +87,7 @@ export default function BookTableSection() {
                 href="mailto:Tezer@outlook.be"
                 className="px-6 py-2 bg-white text-black border border-gray-900 rounded-lg text-sm uppercase tracking-widest hover:bg-gray-100 transition"
               >
-                Email
+                {t('email_button', 'Email')}
               </a>
             </div>
           </div>

@@ -5,18 +5,18 @@
   "reservation": "Réservation",
   "contact": "Contact",
   "footer_text": "Ocakta Muhabbet. Tous droits réservés.",
-  "welcome_to": "Bienvenue à",
-  "hero_subtitle": "Votre prestigieux restaurant lounge",
+  "welcome_to": "Bienvenue chez",
+  "hero_subtitle": "Votre restaurant lounge prestigieux",
   "our_special_dishes": "Nos Plats Spéciaux",
-  "explore_our_menu": "Un voyage culinaire aux saveurs délicieuses spécialement pour vous",
+  "explore_our_menu": "Un voyage culinaire de saveurs délicieuses spécialement pour vous",
   "all_special_dishes": "Tous les Plats Spéciaux",
   "drinks_menu": "Menu des Boissons",
   "refresh_with_our_drinks": "Rafraîchissez-vous avec nos délicieuses boissons",
   "view_menu": "Voir le Menu",
-  "food_menu": "Menu Alimentaire",
+  "food_menu": "Menu des Plats",
   "discover_our_food": "Découvrez nos délicieuses créations culinaires",
   "book_a_table": "Réserver une Table",
-  "reserve_your_spot": "Réservez votre place et profitez de notre cuisine raffinée",
+  "reserve_your_spot": "Réservez votre place et profitez de notre délicieuse cuisine",
   "full_name": "Nom Complet",
   "enter_full_name": "Entrez votre nom complet",
   "phone_number": "Numéro de Téléphone",
@@ -25,35 +25,35 @@
   "time": "Heure",
   "people": "Nombre de Personnes",
   "enter_number_of_people": "Entrez le nombre de personnes",
-  "book_table": "Réserver",
+  "book_table": "Réserver Maintenant",
   "our_location": "Notre Emplacement",
-  "visit_us_at": "Venez nous rendre visite et profitez de notre cuisine raffinée dans une atmosphère chaleureuse et conviviale",
-  "opening_hours": "Heures d'Ouverture",
+  "visit_us_at": "Venez nous voir et profitez de notre délicieuse cuisine dans une atmosphère chaleureuse et conviviale",
+  "opening_hours": "Horaires d'Ouverture",
   "opening_hours_text": "MARDI – DIMANCHE 12:00 – 23:00",
   "address": "Adresse",
   "restaurant_address": "Heilig-Hartstraat 74, Sint-Amandsberg 9040, Gand, Belgique",
   "contact_us": "Contact",
-  "phone": "Téléphone: +32 0933 55095",
-  "email": "E-mail: Tezer@outlook.be",
+  "phone": "Téléphone : +32 0933 55095",
+  "email": "E-mail : Tezer@outlook.be",
   "open_in_google_maps": "Ouvrir dans Google Maps",
-  "find_us_on": "Suivez-nous sur",
+  "find_us_on": "Retrouvez-nous sur",
   "important_links": "Liens Importants",
   "assistance": "Assistance",
   "instagram": "Instagram",
   "tiktok": "TikTok",
   "our_menu": "Notre Menu",
-  "book_now": "Réserver",
+  "book_now": "Réserver Maintenant",
   "our_food": "Notre Nourriture",
-  "view_food_menu": "Voir le Menu Alimentaire",
+  "view_food_menu": "Voir le Menu des Plats",
   "reservation_title": "Faire une Réservation",
   "hero_button_menu": "Notre Menu",
   "hero_button_reservation": "Réservation",
-  "dish_cold_meze": "Mezze Froid",
-  "dish_tatli": "Tatlı",
+  "dish_cold_meze": "Mezzés Froids",
+  "dish_tatli": "Desserts",
   "dish_kezartma_deniz_urunleri": "Fruits de Mer Grillés",
   "dish_ahtapot": "Poulpe",
-  "all": "Tous",
-  "contact_title": "CONTACT",
+  "all": "Tous","call": "Appeler",
+  "email_button": "Courriel",
 
   "menu_items": {
     "soup": {
@@ -65,36 +65,36 @@
     "kids": {
       "title": "Menu Enfants",
       "items": [
-        { "name": "Burger Boulette + frites", "price": 9.5 },
-        { "name": "Bâtonnets de Poulet + frites", "price": 9.5 },
+        { "name": "Burger de boulettes + frites", "price": 9.5 },
+        { "name": "Bâtonnets de poulet + frites", "price": 9.5 },
         { "name": "Nuggets + frites", "price": 9.5 }
       ]
     },
     "starters": {
       "title": "Entrées",
       "items": [
-        { "name": "Rouleaux Croustillants", "price": 11.5 },
-        { "name": "Crevettes au Beurre", "price": 19.5 },
-        { "name": "Boulgour Farci", "price": 8.5 },
-        { "name": "Calamars Frits", "price": 14.5 },
+        { "name": "Rouleaux de pâte feuilletée", "price": 11.5 },
+        { "name": "Crevettes au beurre", "price": 19.5 },
+        { "name": "Boulettes de viande farcies", "price": 8.5 },
+        { "name": "Calamars frits", "price": 14.5 },
         { "name": "Escargots", "price": 18.5 }
       ]
     },
-    "meze": {
-      "title": "Mezze Froid",
+    "cold-meze": {
+      "title": "Mezzés Froids",
       "items": [
-        { "name": "Huîtres (6 pcs)", "price": 24 },
-        { "name": "Tzatziki", "price": 7.5 },
-        { "name": "Haydari", "price": 7.5 },
-        { "name": "Sauce Épicée", "price": 7.5 },
-        { "name": "Houmous", "price": 7.5 },
-        { "name": "Haricots Pinto", "price": 8.5 },
-        { "name": "Légumes Méli-Mélo", "price": 8.5 },
-        { "name": "Yaourt Chaud", "price": 8.5 },
-        { "name": "Feuilles Farcies", "price": 8.5 },
-        { "name": "Salade Russe", "price": 9.5 },
-        { "name": "Plateau de Fromages", "price": 18.5 },
-        { "name": "Assiette de Mezze Mixte", "price": 19.5 }
+        { "name": "Huîtres (6 pièces)", "price": 24 },
+        { "name": "Yaourt au concombre", "price": 7.5 },
+        { "name": "Dip au yaourt épais", "price": 7.5 },
+        { "name": "Dip à la tomate épicée", "price": 7.5 },
+        { "name": "Hoummous", "price": 7.5 },
+        { "name": "Salade de haricots", "price": 8.5 },
+        { "name": "Légumes frits en sauce", "price": 8.5 },
+        { "name": "Dip au fromage épicé", "price": 8.5 },
+        { "name": "Feuilles de vigne farcies", "price": 8.5 },
+        { "name": "Salade russe", "price": 9.5 },
+        { "name": "Assiette de fromages", "price": 18.5 },
+        { "name": "Assortiment de mezze", "price": 19.5 }
       ]
     },
     "salads": {
@@ -107,12 +107,150 @@
         { "name": "Salade Spéciale", "price": 24.5 }
       ]
     },
+    "mussels": {
+      "title": "Moules",
+      "items": [
+        { "name": "Moules belges", "price": 26.5 },
+        { "name": "Moules à l'ail", "price": 27.5 },
+        { "name": "Moules à la crème", "price": 28.5 },
+        { "name": "Cozze alla Tarantina", "price": 26.5 }
+      ]
+    },
+    "lobster": {
+      "title": "Homard",
+      "items": [
+        { "name": "Homard grillé", "price": 45.0 },
+        { "name": "Homard Thermidor", "price": 49.0 },
+        { "name": "Homard frit à l'ail", "price": 47.0 }
+      ]
+    },
+    "paella": {
+      "title": "Paella",
+      "items": [
+        { "name": "Paella au poisson (1 personne)", "price": 29.5 },
+        { "name": "Paella au poisson (2 personnes)", "price": 55.0 }
+      ]
+    },
+    "side-dishes": {
+      "title": "Accompagnements",
+      "items": [
+        { "name": "Frites", "price": 5.5 },
+        { "name": "Purée de pommes de terre", "price": 6.5 },
+        { "name": "Riz", "price": 5.5 },
+        { "name": "Légumes grillés", "price": 6.5 },
+        { "name": "Asperges au four", "price": 8.5 }
+      ]
+    },
+    "fish": {
+      "title": "Poissons",
+      "items": [
+        { "name": "Bar", "price": 29.5 },
+        { "name": "Dorade royale", "price": 27.5 },
+        { "name": "Saumon", "price": 28.5 },
+        { "name": "Brochette de thon", "price": 27.5 },
+        { "name": "Merlan", "price": 26.5 },
+        { "name": "Sole", "price": 34.5 }
+      ]
+    },
+    "octopus": {
+      "title": "Poulpe",
+      "items": [
+        { "name": "Poulpe grillé", "price": 32.5 },
+        { "name": "Poulpe sur lit de pommes de terre", "price": 34.5 },
+        { "name": "Poulpe frit", "price": 31.5 }
+      ]
+    },
+    "grill": {
+      "title": "Grillades & Kébabs",
+      "items": [
+        { "name": "Brochette de bœuf", "price": 26.5 },
+        { "name": "Brochette de poulet", "price": 22.5 },
+        { "name": "Kebab Adana", "price": 24.5 },
+        { "name": "Kebab Urfa", "price": 23.5 },
+        { "name": "Kebab Çökertme", "price": 28.5 },
+        { "name": "Wrap Beyti", "price": 26.5 },
+        { "name": "Ali Nazik (agneau)", "price": 29.5 },
+        { "name": "Entrecôte", "price": 34.5 },
+        { "name": "Grill mixte", "price": 34.5 }
+      ]
+    },
+    "raki": {
+      "title": "Raki",
+      "items": [
+        { "name": "Yeni Rakı Double", "price": 6.0 },
+        { "name": "Yeni Rakı 35 cl", "price": 45.0 },
+        { "name": "Yeni Rakı 70 cl", "price": 70.0 },
+        { "name": "Tekirdağ Rakı Double", "price": 8.0 },
+        { "name": "Tekirdağ Rakı 35 cl", "price": 65.0 },
+        { "name": "Tekirdağ Rakı 70 cl", "price": 100.0 },
+        { "name": "Beylerbeyi Rakı Double", "price": 8.5 },
+        { "name": "Beylerbeyi Rakı 35 cl", "price": 65.0 },
+        { "name": "Beylerbeyi Rakı 70 cl", "price": 120.0 }
+      ]
+    },
+    "wines": {
+      "title": "Vins",
+      "items": [
+        { "name": "Vin blanc (verre)", "price": 6.5 },
+        { "name": "Vin rouge (verre)", "price": 6.0 },
+        { "name": "Vin rosé (verre)", "price": 6.5 },
+        { "name": "Cava (verre)", "price": 7.0 },
+        { "name": "Vin (bouteille)", "price": 24.0 },
+        { "name": "Cava (bouteille)", "price": 37.0 }
+      ]
+    },
+    "cocktails": {
+      "title": "Cocktails",
+      "items": [
+        { "name": "Espresso Martini", "price": 12.0 },
+        { "name": "Spritz", "price": 11.0 },
+        { "name": "New York Sour", "price": 17.0 },
+        { "name": "Pink Lady", "price": 9.0 }
+      ]
+    },
+    "non-alcoholic-cocktails": {
+      "title": "Cocktails sans Alcool",
+      "items": [
+        { "name": "Mocktail Fraise Bleue", "price": 6.0 },
+        { "name": "Mocktail Mojito", "price": 9.0 },
+        { "name": "Pina Colada sans alcool", "price": 9.0 }
+      ]
+    },
+    "beers": {
+      "title": "Bières",
+      "items": [
+        { "name": "Jupiler / Hoegaarden", "price": 3.5 },
+        { "name": "Duvel", "price": 6.0 }
+      ]
+    },
+    "hot-drinks": {
+      "title": "Boissons Chaudes",
+      "items": [
+        { "name": "Thé", "price": 3.0 },
+        { "name": "Café turc", "price": 3.5 },
+        { "name": "Expresso", "price": 3.0 },
+        { "name": "Café", "price": 3.0 }
+      ]
+    },
+    "drinks": {
+      "title": "Boissons",
+      "items": [
+        { "name": "Eau", "price": 2 },
+        { "name": "Ayran (boisson au yaourt)", "price": 2 },
+        { "name": "Eau gazeuse", "price": 2.5 },
+        { "name": "Coca Cola / Zero", "price": 2.5 },
+        { "name": "Fanta", "price": 2.5 },
+        { "name": "Sprite", "price": 2.5 },
+        { "name": "Red Bull", "price": 3 }
+      ]
+    },
     "desserts": {
       "title": "Desserts",
       "items": [
-        { "name": "Riz au Lait", "price": 7.5 },
-        { "name": "Kunefe", "price": 9.5 },
-        { "name": "Glace", "price": 6.5 }
+        { "name": "Pudding au riz", "price": 7.5 },
+        { "name": "Künefe (pâtisserie au fromage)", "price": 9.5 },
+        { "name": "Glace (divers)", "price": 6.5 },
+        { "name": "Mousse à la fraise", "price": 7.5 }
       ]
     }
   }

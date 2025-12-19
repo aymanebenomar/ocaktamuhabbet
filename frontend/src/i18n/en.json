@@ -6,17 +6,17 @@
   "contact": "Contact",
   "footer_text": "Ocakta Muhabbet. All rights reserved.",
   "welcome_to": "Welcome to",
-  "hero_subtitle": "Your Prestigious Lounge Restaurant",
+  "hero_subtitle": "Your prestigious lounge restaurant",
   "our_special_dishes": "Our Special Dishes",
-  "explore_our_menu": "A culinary journey of delicious flavors made especially for you",
+  "explore_our_menu": "A culinary journey of delicious flavors specially for you",
   "all_special_dishes": "All Special Dishes",
   "drinks_menu": "Drinks Menu",
-  "refresh_with_our_drinks": "Refresh yourself with our delightful drinks",
+  "refresh_with_our_drinks": "Refresh yourself with our delicious drinks",
   "view_menu": "View Menu",
   "food_menu": "Food Menu",
   "discover_our_food": "Discover our delicious culinary creations",
   "book_a_table": "Book a Table",
-  "reserve_your_spot": "Reserve your spot and enjoy our exquisite cuisine",
+  "reserve_your_spot": "Reserve your spot and enjoy our delicious cuisine",
   "full_name": "Full Name",
   "enter_full_name": "Enter your full name",
   "phone_number": "Phone Number",
@@ -24,19 +24,19 @@
   "date": "Date",
   "time": "Time",
   "people": "Number of People",
-  "enter_number_of_people": "Enter the number of people",
+  "enter_number_of_people": "Enter number of people",
   "book_table": "Book Now",
   "our_location": "Our Location",
-  "visit_us_at": "Visit us and enjoy our exquisite cuisine in a warm and cozy atmosphere",
+  "visit_us_at": "Visit us and enjoy our delicious cuisine in a warm and cozy atmosphere",
   "opening_hours": "Opening Hours",
   "opening_hours_text": "TUESDAY – SUNDAY 12:00 – 23:00",
   "address": "Address",
-  "restaurant_address": "Heilig-Hartstraat 74, Sint-Amandsberg 9040, Gent, Belgium",
+  "restaurant_address": "Heilig-Hartstraat 74, Sint-Amandsberg 9040, Ghent, Belgium",
   "contact_us": "Contact",
   "phone": "Phone: +32 0933 55095",
   "email": "Email: Tezer@outlook.be",
   "open_in_google_maps": "Open in Google Maps",
-  "find_us_on": "Follow us on",
+  "find_us_on": "Find us on",
   "important_links": "Important Links",
   "assistance": "Assistance",
   "instagram": "Instagram",
@@ -49,11 +49,12 @@
   "hero_button_menu": "Our Menu",
   "hero_button_reservation": "Reservation",
   "dish_cold_meze": "Cold Meze",
-  "dish_tatli": "Tatlı",
+  "dish_tatli": "Desserts",
   "dish_kezartma_deniz_urunleri": "Grilled Seafood",
   "dish_ahtapot": "Octopus",
   "all": "All",
-  "contact_title": "CONTACT",
+  "call": "Call",
+  "email_button": "Email",
 
   "menu_items": {
     "soup": {
@@ -73,28 +74,28 @@
     "starters": {
       "title": "Starters",
       "items": [
-        { "name": "Crispy Rolls", "price": 11.5 },
-        { "name": "Shrimp in Butter", "price": 19.5 },
-        { "name": "Stuffed Bulgur", "price": 8.5 },
-        { "name": "Fried Calamari", "price": 14.5 },
-        { "name": "Escargots", "price": 18.5 }
+        { "name": "Cigar pastry rolls", "price": 11.5 },
+        { "name": "Shrimp in butter", "price": 19.5 },
+        { "name": "Stuffed meatballs", "price": 8.5 },
+        { "name": "Fried calamari", "price": 14.5 },
+        { "name": "Snails", "price": 18.5 }
       ]
     },
-    "meze": {
+    "cold-meze": {
       "title": "Cold Meze",
       "items": [
-        { "name": "Oysters (6 pcs)", "price": 24 },
-        { "name": "Tzatziki", "price": 7.5 },
-        { "name": "Haydari", "price": 7.5 },
-        { "name": "Spicy Dip", "price": 7.5 },
+        { "name": "Oysters (6 pieces)", "price": 24 },
+        { "name": "Yogurt with cucumber", "price": 7.5 },
+        { "name": "Thick yogurt dip", "price": 7.5 },
+        { "name": "Spicy tomato dip", "price": 7.5 },
         { "name": "Hummus", "price": 7.5 },
-        { "name": "Pinto Beans", "price": 8.5 },
-        { "name": "Veggie Medley", "price": 8.5 },
-        { "name": "Hot Yogurt", "price": 8.5 },
-        { "name": "Stuffed Leaves", "price": 8.5 },
-        { "name": "Russian Salad", "price": 9.5 },
-        { "name": "Cheese Plate", "price": 18.5 },
-        { "name": "Mixed Meze Plate", "price": 19.5 }
+        { "name": "Bean salad", "price": 8.5 },
+        { "name": "Fried vegetables in sauce", "price": 8.5 },
+        { "name": "Spicy cheese dip", "price": 8.5 },
+        { "name": "Stuffed vine leaves", "price": 8.5 },
+        { "name": "Russian salad", "price": 9.5 },
+        { "name": "Cheese platter", "price": 18.5 },
+        { "name": "Mixed meze platter", "price": 19.5 }
       ]
     },
     "salads": {
@@ -107,12 +108,150 @@
         { "name": "Special House Salad", "price": 24.5 }
       ]
     },
+    "mussels": {
+      "title": "Mussels",
+      "items": [
+        { "name": "Belgian mussels", "price": 26.5 },
+        { "name": "Garlic mussels", "price": 27.5 },
+        { "name": "Creamy mussels", "price": 28.5 },
+        { "name": "Cozze alla Tarantina", "price": 26.5 }
+      ]
+    },
+    "lobster": {
+      "title": "Lobster",
+      "items": [
+        { "name": "Grilled lobster", "price": 45.0 },
+        { "name": "Lobster Thermidor", "price": 49.0 },
+        { "name": "Fried garlic lobster", "price": 47.0 }
+      ]
+    },
+    "paella": {
+      "title": "Paella",
+      "items": [
+        { "name": "Fish Paella (1 person)", "price": 29.5 },
+        { "name": "Fish Paella (2 persons)", "price": 55.0 }
+      ]
+    },
+    "side-dishes": {
+      "title": "Side Dishes",
+      "items": [
+        { "name": "French fries", "price": 5.5 },
+        { "name": "Mashed potatoes", "price": 6.5 },
+        { "name": "Rice", "price": 5.5 },
+        { "name": "Grilled vegetables", "price": 6.5 },
+        { "name": "Baked asparagus", "price": 8.5 }
+      ]
+    },
+    "fish": {
+      "title": "Fish",
+      "items": [
+        { "name": "Sea bass", "price": 29.5 },
+        { "name": "Gilthead bream", "price": 27.5 },
+        { "name": "Salmon", "price": 28.5 },
+        { "name": "Tuna skewer", "price": 27.5 },
+        { "name": "Whiting", "price": 26.5 },
+        { "name": "Sole", "price": 34.5 }
+      ]
+    },
+    "octopus": {
+      "title": "Octopus",
+      "items": [
+        { "name": "Grilled octopus", "price": 32.5 },
+        { "name": "Octopus on potato bed", "price": 34.5 },
+        { "name": "Fried octopus", "price": 31.5 }
+      ]
+    },
+    "grill": {
+      "title": "Grill & Kebabs",
+      "items": [
+        { "name": "Beef skewer", "price": 26.5 },
+        { "name": "Chicken skewer", "price": 22.5 },
+        { "name": "Adana kebab", "price": 24.5 },
+        { "name": "Urfa kebab", "price": 23.5 },
+        { "name": "Çökertme kebab", "price": 28.5 },
+        { "name": "Beyti wrap", "price": 26.5 },
+        { "name": "Ali Nazik (lamb)", "price": 29.5 },
+        { "name": "Ribeye steak", "price": 34.5 },
+        { "name": "Mixed grill", "price": 34.5 }
+      ]
+    },
+    "raki": {
+      "title": "Raki",
+      "items": [
+        { "name": "Yeni Rakı Double", "price": 6.0 },
+        { "name": "Yeni Rakı 35 cl", "price": 45.0 },
+        { "name": "Yeni Rakı 70 cl", "price": 70.0 },
+        { "name": "Tekirdağ Rakı Double", "price": 8.0 },
+        { "name": "Tekirdağ Rakı 35 cl", "price": 65.0 },
+        { "name": "Tekirdağ Rakı 70 cl", "price": 100.0 },
+        { "name": "Beylerbeyi Rakı Double", "price": 8.5 },
+        { "name": "Beylerbeyi Rakı 35 cl", "price": 65.0 },
+        { "name": "Beylerbeyi Rakı 70 cl", "price": 120.0 }
+      ]
+    },
+    "wines": {
+      "title": "Wines",
+      "items": [
+        { "name": "White wine (glass)", "price": 6.5 },
+        { "name": "Red wine (glass)", "price": 6.0 },
+        { "name": "Rosé wine (glass)", "price": 6.5 },
+        { "name": "Cava (glass)", "price": 7.0 },
+        { "name": "Wine (bottle)", "price": 24.0 },
+        { "name": "Cava (bottle)", "price": 37.0 }
+      ]
+    },
+    "cocktails": {
+      "title": "Cocktails",
+      "items": [
+        { "name": "Espresso Martini", "price": 12.0 },
+        { "name": "Spritz", "price": 11.0 },
+        { "name": "New York Sour", "price": 17.0 },
+        { "name": "Pink Lady", "price": 9.0 }
+      ]
+    },
+    "non-alcoholic-cocktails": {
+      "title": "Non-Alcoholic Cocktails",
+      "items": [
+        { "name": "Strawberry Blue Mocktail", "price": 6.0 },
+        { "name": "Mojito Mocktail", "price": 9.0 },
+        { "name": "Virgin Pina Colada", "price": 9.0 }
+      ]
+    },
+    "beers": {
+      "title": "Beers",
+      "items": [
+        { "name": "Jupiler / Hoegaarden", "price": 3.5 },
+        { "name": "Duvel", "price": 6.0 }
+      ]
+    },
+    "hot-drinks": {
+      "title": "Hot Drinks",
+      "items": [
+        { "name": "Tea", "price": 3.0 },
+        { "name": "Turkish coffee", "price": 3.5 },
+        { "name": "Espresso", "price": 3.0 },
+        { "name": "Coffee", "price": 3.0 }
+      ]
+    },
+    "drinks": {
+      "title": "Drinks",
+      "items": [
+        { "name": "Water", "price": 2 },
+        { "name": "Ayran (yogurt drink)", "price": 2 },
+        { "name": "Soda water", "price": 2.5 },
+        { "name": "Coca Cola / Zero", "price": 2.5 },
+        { "name": "Fanta", "price": 2.5 },
+        { "name": "Sprite", "price": 2.5 },
+        { "name": "Red Bull", "price": 3 }
+      ]
+    },
     "desserts": {
       "title": "Desserts",
       "items": [
-        { "name": "Rice Pudding", "price": 7.5 },
-        { "name": "Kunefe", "price": 9.5 },
-        { "name": "Ice Cream", "price": 6.5 }
+        { "name": "Rice pudding", "price": 7.5 },
+        { "name": "Künefe (cheese pastry)", "price": 9.5 },
+        { "name": "Ice cream (various)", "price": 6.5 },
+        { "name": "Strawberry mousse", "price": 7.5 }
       ]
     }
   }

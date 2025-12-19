@@ -19,7 +19,7 @@ export default function Footer() {
           </h3>
           <div className="flex justify-center gap-6 text-xl">
             <a
-              href="https://www.instagram.com/ocakta_muhabbet_restaurant?igsh=MXRzbTQ3eHVnM3Vubg=="
+              href="https://www.instagram.com/ocakta_muhabbet_restaurant"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:opacity-70 transition"

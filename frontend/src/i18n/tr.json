@@ -5,20 +5,20 @@
   "reservation": "Rezervasyon",
   "contact": "İletişim",
   "footer_text": "Ocakta Muhabbet. Tüm hakları saklıdır.",
-  "welcome_to": "Hoşgeldiniz",
-  "hero_subtitle": "Prestijli Lounge Restoranınız",
-  "our_special_dishes": "Özel Yemeklerimiz",
-  "explore_our_menu": "Sizin için özel hazırlanmış lezzetli tatlarla bir gastronomi yolculuğu",
-  "all_special_dishes": "Tüm Özel Yemekler",
+  "welcome_to": "Hoş Geldiniz",
+  "hero_subtitle": "Prestijli lounge restoranınız",
+  "our_special_dishes": "Özel Lezzetlerimiz",
+  "explore_our_menu": "Size özel lezzetlerle dolu bir gastronomi yolculuğu",
+  "all_special_dishes": "Tüm Özel Lezzetler",
   "drinks_menu": "İçecek Menüsü",
-  "refresh_with_our_drinks": "Lezzetli içeceklerimizle ferahlayın",
-  "view_menu": "Menüyü Görüntüle",
+  "refresh_with_our_drinks": "Lezzetli içeceklerimizle kendinizi yenileyin",
+  "view_menu": "Menüyü Gör",
   "food_menu": "Yemek Menüsü",
-  "discover_our_food": "Lezzetli mutfak kreasyonlarımızı keşfedin",
+  "discover_our_food": "Lezzetli mutfak yaratımlarımızı keşfedin",
   "book_a_table": "Masa Rezervasyonu",
-  "reserve_your_spot": "Yer ayırtın ve enfes mutfağımızın tadını çıkarın",
-  "full_name": "Tam Adınız",
-  "enter_full_name": "Tam adınızı girin",
+  "reserve_your_spot": "Yerinizi ayırtın ve lezzetli mutfağımızın tadını çıkarın",
+  "full_name": "Ad Soyad",
+  "enter_full_name": "Adınızı ve soyadınızı girin",
   "phone_number": "Telefon Numarası",
   "enter_phone_number": "Telefon numaranızı girin",
   "date": "Tarih",
@@ -27,7 +27,7 @@
   "enter_number_of_people": "Kişi sayısını girin",
   "book_table": "Hemen Rezervasyon Yap",
   "our_location": "Konumumuz",
-  "visit_us_at": "Bizi ziyaret edin ve sıcak ve samimi bir atmosferde enfes mutfağımızın tadını çıkarın",
+  "visit_us_at": "Bizi ziyaret edin ve sıcak, samimi bir atmosferde lezzetli mutfağımızın tadını çıkarın",
   "opening_hours": "Çalışma Saatleri",
   "opening_hours_text": "SALI – PAZAR 12:00 – 23:00",
   "address": "Adres",
@@ -37,14 +37,14 @@
   "email": "E-posta: Tezer@outlook.be",
   "open_in_google_maps": "Google Haritalar'da Aç",
   "find_us_on": "Bizi Takip Edin",
-  "important_links": "Önemli Linkler",
+  "important_links": "Önemli Bağlantılar",
   "assistance": "Yardım",
   "instagram": "Instagram",
   "tiktok": "TikTok",
   "our_menu": "Menümüz",
-  "book_now": "Şimdi Rezervasyon Yap",
+  "book_now": "Hemen Rezervasyon",
   "our_food": "Yemeklerimiz",
-  "view_food_menu": "Yemek Menüsünü Görüntüle",
+  "view_food_menu": "Yemek Menüsünü Gör",
   "reservation_title": "Rezervasyon Yap",
   "hero_button_menu": "Menümüz",
   "hero_button_reservation": "Rezervasyon",
@@ -53,66 +53,205 @@
   "dish_kezartma_deniz_urunleri": "Izgara Deniz Ürünleri",
   "dish_ahtapot": "Ahtapot",
   "all": "Tümü",
-  "contact_title": "İLETİŞİM",
+  "call": "Ara",
+  "email_button": "E-posta",
 
   "menu_items": {
     "soup": {
-      "title": "Günün Çorbası",
+      "title": "GÜNÜN ÇORBASI",
       "items": [
-        { "name": "Günün Çorbası", "price": 7.5 }
+        { "name": "Günün çorbası", "price": 7.5 }
       ]
     },
     "kids": {
-      "title": "Çocuk Menüsü",
+      "title": "ÇOCUK MENÜLERİ",
       "items": [
-        { "name": "Köfteburger + Patates", "price": 9.5 },
-        { "name": "Tavuk Çubuk + Patates", "price": 9.5 },
-        { "name": "Nuggets + Patates", "price": 9.5 }
+        { "name": "Köfteburger + patates", "price": 9.5 },
+        { "name": "Kipstick + patates", "price": 9.5 },
+        { "name": "Nuggets + patates", "price": 9.5 }
       ]
     },
     "starters": {
-      "title": "Başlangıçlar",
+      "title": "ARA SICAKLAR",
       "items": [
-        { "name": "Sigara Böreği", "price": 11.5 },
-        { "name": "Tereyağında Karides", "price": 19.5 },
-        { "name": "İçli Köfte", "price": 8.5 },
-        { "name": "Kalamar Tava", "price": 14.5 },
-        { "name": "Salyangoz", "price": 18.5 }
+        { "name": "Sigara böreği", "price": 11.5 },
+        { "name": "Tereyağında karides", "price": 19.5 },
+        { "name": "Içli köfte", "price": 8.5 },
+        { "name": "Kalamar tava", "price": 14.5 },
+        { "name": "Salyangoz (Escargots)", "price": 18.5 }
       ]
     },
-    "meze": {
-      "title": "Soğuk Mezeler",
+    "cold-meze": {
+      "title": "SOĞUK MEZELER",
       "items": [
-        { "name": "İstiridye (6 adet)", "price": 24 },
+        { "name": "Les Huîtres / İstiridye (6 adet)", "price": 24 },
         { "name": "Cacık", "price": 7.5 },
         { "name": "Haydari", "price": 7.5 },
-        { "name": "Antep Ezme", "price": 7.5 },
+        { "name": "Antep ezme", "price": 7.5 },
         { "name": "Humus", "price": 7.5 },
-        { "name": "Barbunya Pilaki", "price": 8.5 },
+        { "name": "Barbunya pilaki", "price": 8.5 },
         { "name": "Şakşuka", "price": 8.5 },
         { "name": "Atom", "price": 8.5 },
-        { "name": "Yaprak Sarma", "price": 8.5 },
-        { "name": "Rus Salatası", "price": 9.5 },
-        { "name": "Peynir Tabağı", "price": 18.5 },
-        { "name": "Karışık Meze Tabağı", "price": 19.5 }
+        { "name": "Yaprak sarma", "price": 8.5 },
+        { "name": "Rus salatası", "price": 9.5 },
+        { "name": "Peynir tabağı", "price": 18.5 },
+        { "name": "Karışık meze tabağı", "price": 19.5 }
       ]
     },
     "salads": {
-      "title": "Salatalar",
+      "title": "SALATALAR",
       "items": [
         { "name": "Somon Salatası", "price": 22.5 },
         { "name": "Feta Salatası", "price": 17.5 },
         { "name": "Mevsim Salatası", "price": 8.5 },
         { "name": "Çoban Salatası", "price": 9.5 },
-        { "name": "Muhabbet Özel Salatası", "price": 24.5 }
+        { "name": "Muhabbet Special Salata", "price": 24.5 }
+      ]
+    },
+    "mussels": {
+      "title": "MIDYELER",
+      "items": [
+        { "name": "Belçika midyesi", "price": 26.5 },
+        { "name": "Sarımsaklı midye", "price": 27.5 },
+        { "name": "Kremalı midye", "price": 28.5 },
+        { "name": "Cozze alla Tarantina", "price": 26.5 }
+      ]
+    },
+    "lobster": {
+      "title": "ISTAKOZ",
+      "items": [
+        { "name": "Izgara istakoz", "price": 45.0 },
+        { "name": "Istakoz Thermidor", "price": 49.0 },
+        { "name": "Sarımsaklı istakoz tava", "price": 47.0 }
+      ]
+    },
+    "paella": {
+      "title": "PAELLA",
+      "items": [
+        { "name": "Balıklı Paella (1 kişilik)", "price": 29.5 },
+        { "name": "Balıklı Paella (2 kişilik)", "price": 55.0 }
+      ]
+    },
+    "side-dishes": {
+      "title": "YAN LEZZETLER",
+      "items": [
+        { "name": "Patates kızartması", "price": 5.5 },
+        { "name": "Patates püresi", "price": 6.5 },
+        { "name": "Pilav", "price": 5.5 },
+        { "name": "Izgara sebze", "price": 6.5 },
+        { "name": "Fırında kuşkonmaz", "price": 8.5 }
+      ]
+    },
+    "fish": {
+      "title": "BALIKLAR",
+      "items": [
+        { "name": "Levrek", "price": 29.5 },
+        { "name": "Çipura", "price": 27.5 },
+        { "name": "Somon", "price": 28.5 },
+        { "name": "Ton şiş", "price": 27.5 },
+        { "name": "Mezgit", "price": 26.5 },
+        { "name": "Dil balığı (Tong)", "price": 34.5 }
+      ]
+    },
+    "octopus": {
+      "title": "AHTAPOT",
+      "items": [
+        { "name": "Izgara ahtapot", "price": 32.5 },
+        { "name": "Patates yatağında ahtapot", "price": 34.5 },
+        { "name": "Ahtapot tava", "price": 31.5 }
+      ]
+    },
+    "grill": {
+      "title": "IZGARA & KEBAPLAR",
+      "items": [
+        { "name": "Et şiş", "price": 26.5 },
+        { "name": "Tavuk şiş", "price": 22.5 },
+        { "name": "Adana kebap", "price": 24.5 },
+        { "name": "Urfa kebap", "price": 23.5 },
+        { "name": "Çökertme kebabı", "price": 28.5 },
+        { "name": "Beyti sarma", "price": 26.5 },
+        { "name": "Ali Nazik (kuzu)", "price": 29.5 },
+        { "name": "Antrikot", "price": 34.5 },
+        { "name": "Karışık ızgara", "price": 34.5 }
+      ]
+    },
+    "raki": {
+      "title": "RAKI",
+      "items": [
+        { "name": "Yeni Rakı Duble", "price": 6.0 },
+        { "name": "Yeni Rakı 35 cl", "price": 45.0 },
+        { "name": "Yeni Rakı 70 cl", "price": 70.0 },
+        { "name": "Tekirdağ Rakı Duble", "price": 8.0 },
+        { "name": "Tekirdağ Rakı 35 cl", "price": 65.0 },
+        { "name": "Tekirdağ Rakı 70 cl", "price": 100.0 },
+        { "name": "Beylerbeyi Rakı Duble", "price": 8.5 },
+        { "name": "Beylerbeyi Rakı 35 cl", "price": 65.0 },
+        { "name": "Beylerbeyi Rakı 70 cl", "price": 120.0 }
+      ]
+    },
+    "wines": {
+      "title": "ŞARAPLAR",
+      "items": [
+        { "name": "Beyaz şarap (kadeh)", "price": 6.5 },
+        { "name": "Kırmızı şarap (kadeh)", "price": 6.0 },
+        { "name": "Roze şarap (kadeh)", "price": 6.5 },
+        { "name": "Cava (kadeh)", "price": 7.0 },
+        { "name": "Şarap (şişe)", "price": 24.0 },
+        { "name": "Cava (şişe)", "price": 37.0 }
+      ]
+    },
+    "cocktails": {
+      "title": "KOKTEYLLER",
+      "items": [
+        { "name": "Espresso Martini", "price": 12.0 },
+        { "name": "Spritz", "price": 11.0 },
+        { "name": "New York Sour", "price": 17.0 },
+        { "name": "Pink Lady", "price": 9.0 }
+      ]
+    },
+    "non-alcoholic-cocktails": {
+      "title": "ALKOLSÜZ KOKTEYLLER",
+      "items": [
+        { "name": "Strawberry Blue Mocktail", "price": 6.0 },
+        { "name": "Mojito Mocktail", "price": 9.0 },
+        { "name": "Virgin Pina Colada", "price": 9.0 }
+      ]
+    },
+    "beers": {
+      "title": "BIEREN",
+      "items": [
+        { "name": "Jupiler / Hoegaarden", "price": 3.5 },
+        { "name": "Duvel", "price": 6.0 }
+      ]
+    },
+    "hot-drinks": {
+      "title": "SICAK İÇECEKLER",
+      "items": [
+        { "name": "Çay / Tea", "price": 3.0 },
+        { "name": "Türk kahvesi", "price": 3.5 },
+        { "name": "Espresso", "price": 3.0 },
+        { "name": "Koffie", "price": 3.0 }
+      ]
+    },
+    "drinks": {
+      "title": "İÇECEKLER",
+      "items": [
+        { "name": "Su / Water", "price": 2 },
+        { "name": "Ayran", "price": 2 },
+        { "name": "Soda", "price": 2.5 },
+        { "name": "Coca Cola / Zero", "price": 2.5 },
+        { "name": "Fanta", "price": 2.5 },
+        { "name": "Sprite", "price": 2.5 },
+        { "name": "Red Bull", "price": 3 }
       ]
     },
     "desserts": {
-      "title": "Tatlılar",
+      "title": "TATLILAR",
       "items": [
         { "name": "Sütlaç", "price": 7.5 },
         { "name": "Künefe", "price": 9.5 },
-        { "name": "Dondurma", "price": 6.5 }
+        { "name": "Dondurma (çeşitli)", "price": 6.5 },
+        { "name": "Çilek Mousse", "price": 7.5 }
       ]
     }
   }
