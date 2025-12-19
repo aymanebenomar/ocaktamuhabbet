@@ -152,11 +152,14 @@ const MenuItem = ({ item, lang }) => (
     transition={{ duration: 0.5 }}
     className="py-5 border-b border-zinc-100 flex justify-between items-center rounded-xl"
   >
-    <h3 className="text-lg md:text-xl font-semibold uppercase tracking-wide">{item.name[lang]}</h3>
-    <span className="text-lg md:text-xl font-bold">{item.price.toFixed(2)} €</span>
+    <h3 className="text-lg md:text-xl font-semibold uppercase tracking-wide pr-2 flex-1 min-w-0">
+      {item.name[lang]}
+    </h3>
+    <span className="text-lg md:text-xl font-bold whitespace-nowrap pl-2">
+      {item.price.toFixed(2)} €
+    </span>
   </motion.div>
 );
-
 /* ===================== MENU COMPONENT ===================== */
 export default function Menu() {
   const { i18n, t } = useTranslation();
