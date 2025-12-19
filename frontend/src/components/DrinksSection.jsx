@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next'
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom' // Import Link component
 
 // Images
 import drinkImg from '../assets/drink.jpg'
@@ -12,6 +13,14 @@ export default function DrinksSection() {
   const fadeUpVariant = {
     hidden: { opacity: 0, y: 30 },
     visible: { opacity: 1, y: 0 },
+  }
+
+  // Function to handle smooth scroll to section
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId)
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    }
   }
 
   return (
@@ -68,15 +77,27 @@ export default function DrinksSection() {
             )}
           </p>
 
-          <motion.button
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.5 }}
-            transition={{ duration: 1, delay: 0.4 }}
-            className="px-8 py-3 border border-white text-white uppercase tracking-widest hover:bg-white hover:text-black transition duration-300 rounded-lg"
+          {/* Button linking to drinks section */}
+          <Link 
+            to="/menu#drinks-section" 
+            onClick={(e) => {
+              // If we're already on the menu page, handle smooth scroll
+              if (window.location.pathname === '/menu') {
+                e.preventDefault()
+                scrollToSection('drinks-section')
+              }
+            }}
           >
-            {t('view_menu', 'View our wines')}
-          </motion.button>
+            <motion.button
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{ duration: 1, delay: 0.4 }}
+              className="px-8 py-3 border border-white text-white uppercase tracking-widest hover:bg-white hover:text-black transition duration-300 rounded-lg"
+            >
+              {t('view_menu', 'View our wines')}
+            </motion.button>
+          </Link>
         </motion.div>
       </div>
 
@@ -132,15 +153,27 @@ export default function DrinksSection() {
             )}
           </p>
 
-          <motion.button
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.5 }}
-            transition={{ duration: 1, delay: 0.4 }}
-            className="px-8 py-3 border border-white text-white uppercase tracking-widest hover:bg-white hover:text-black transition duration-300 rounded-lg"
+          {/* Button linking to food section */}
+          <Link 
+            to="/menu#food-section" 
+            onClick={(e) => {
+              // If we're already on the menu page, handle smooth scroll
+              if (window.location.pathname === '/menu') {
+                e.preventDefault()
+                scrollToSection('food-section')
+              }
+            }}
           >
-            {t('view_menu', 'View our food')}
-          </motion.button>
+            <motion.button
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{ duration: 1, delay: 0.4 }}
+              className="px-8 py-3 border border-white text-white uppercase tracking-widest hover:bg-white hover:text-black transition duration-300 rounded-lg"
+            >
+              {t('view_menu', 'View our food')}
+            </motion.button>
+          </Link>
         </motion.div>
       </div>
     </section>

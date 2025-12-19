@@ -1,6 +1,8 @@
 import React, { useMemo, useState } from 'react';
 import { Search, Star, ChevronDown } from 'lucide-react';
 import { motion } from 'framer-motion';
+
+
 import { useTranslation } from 'react-i18next';
 import Plat7 from '../assets/plat10.jpg';
 import Soup from '../assets/soup.jpg';
@@ -10,6 +12,7 @@ import ColdMeze from '../assets/coldmeze.jpg';
 import Drink2 from '../assets/drinkk.jpg';
 import Kabab from '../assets/kabab.jpg';
 import Salad from '../assets/salade.jpg';
+import { useEffect } from 'react';
 
 /* ===================== FULL MENU DATA ===================== */
 const MENU_DATA = [
@@ -136,6 +139,10 @@ const MENU_DATA = [
   }
 ];
 
+
+
+
+
 /* ===================== MENU ITEM ===================== */
 const MenuItem = ({ item, lang }) => (
   <motion.div
@@ -153,11 +160,16 @@ const MenuItem = ({ item, lang }) => (
 /* ===================== MENU COMPONENT ===================== */
 export default function Menu() {
   const { i18n, t } = useTranslation();
-  const lang = i18n.language; // navbar-selected language
-
+  const lang = i18n.language;
   const [search, setSearch] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+
+   useEffect(() => {
+    // Scroll to top when component mounts
+    window.scrollTo(0, 0);
+  }, []);
 
   const filteredData = useMemo(() => {
     return MENU_DATA.map(cat => {
@@ -306,7 +318,7 @@ export default function Menu() {
                   <Star size={12} className="text-zinc-400" />
                   <span className="text-xs tracking-[0.4em] uppercase text-zinc-400">{cat.id}</span>
                 </div>
-                <h2 className="text-4xl md:text-5xl font-thin mb-4 tracking-widest" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+                <h2 className="text-3xl md:text-5xl font-thin mb-4 tracking-widest" style={{ fontFamily: 'Montserrat, sans-serif' }}>
                   {cat.title[lang]}
                 </h2>
                 {cat.note && (

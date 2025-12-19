@@ -79,7 +79,6 @@ export default function Navbar() {
           <div className="hidden md:flex items-center gap-8 text-sm">
             <Link className="hover:text-gray-300 transition font-medium uppercase tracking-wide" to="/">{t('home')}</Link>
             <Link className="hover:text-gray-300 transition font-medium uppercase tracking-wide" to="/menu">{t('menu')}</Link>
-            <Link className="hover:text-gray-300 transition font-medium uppercase tracking-wide" to="/reservation">{t('reservation')}</Link>
             <Link className="hover:text-gray-300 transition font-medium uppercase tracking-wide" to="/contact">{t('contact')}</Link>
 
             {/* LANGUAGE DROPDOWN */}
@@ -149,7 +148,6 @@ export default function Navbar() {
       >
         <Link onClick={() => setMenuOpen(false)} className="font-montserrat font-medium uppercase tracking-wide" to="/">{t('home')}</Link>
         <Link onClick={() => setMenuOpen(false)} className="font-montserrat font-medium uppercase tracking-wide" to="/menu">{t('menu')}</Link>
-        <Link onClick={() => setMenuOpen(false)} className="font-montserrat font-medium uppercase tracking-wide" to="/reservation">{t('reservation')}</Link>
         <Link onClick={() => setMenuOpen(false)} className="font-montserrat font-medium uppercase tracking-wide" to="/contact">{t('contact')}</Link>
 
         <button
