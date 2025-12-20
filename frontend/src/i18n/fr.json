@@ -77,7 +77,10 @@
         { "name": "Crevettes au beurre", "price": 19.5 },
         { "name": "Boulettes de viande farcies", "price": 8.5 },
         { "name": "Calamars frits", "price": 14.5 },
-        { "name": "Escargots", "price": 18.5 }
+        { "name": "Escargots", "price": 18.5 },
+        { "name": "Crevettes géantes grillées", "price": 17.5 },
+        { "name": "Croquette de pommes de terre", "price": 6.5 },
+        { "name": "Champignons rôtis", "price": 9.5 }
       ]
     },
     "cold-meze": {

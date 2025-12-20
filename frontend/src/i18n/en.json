@@ -78,7 +78,10 @@
         { "name": "Shrimp in butter", "price": 19.5 },
         { "name": "Stuffed meatballs", "price": 8.5 },
         { "name": "Fried calamari", "price": 14.5 },
-        { "name": "Snails", "price": 18.5 }
+        { "name": "Grilled Jumbo Shrimp", "price": 17.5 },
+        { "name": "Croquet (Potato Croquette)", "price": 6.5 },
+        { "name": "Baked Mushrooms", "price": 9.5 },
+        { "name": "Escargots", "price": 18.5 }
       ]
     },
     "cold-meze": {

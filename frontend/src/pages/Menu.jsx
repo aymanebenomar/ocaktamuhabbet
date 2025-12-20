@@ -55,7 +55,11 @@ const MENU_DATA = [
       { name: { tr: 'Tereyağında karides', en: 'Shrimp in butter', nl: 'Garnalen in boter', fr: 'Crevettes au beurre' }, price: 19.5 },
       { name: { tr: 'Içli köfte', en: 'Stuffed meatballs', nl: 'Gevulde köfte', fr: 'Boulettes de viande farcies' }, price: 8.5 },
       { name: { tr: 'Kalamar tava', en: 'Fried calamari', nl: 'Gebakken calamari', fr: 'Calamars frits' }, price: 14.5 },
-      { name: { tr: 'Salyangoz (Escargots)', en: 'Snails', nl: 'Slakken', fr: 'Escargots' }, price: 18.5 }
+      { name: { tr: 'Salyangoz (Escargots)', en: 'Snails', nl: 'Slakken', fr: 'Escargots' }, price: 18.5 },
+      { name: { tr: 'Izgara jumbo karides (Jumbo shrimp on the grill)', en: 'Jumbo shrimp on the grill', nl: 'Jumbo garnalen op de grill', fr: 'Crevettes géantes grillées' }, price: 17.5 },
+      { name: { tr: 'Hamburger', en: 'Hamburger', nl: 'Hamburger', fr: 'Hamburger' }, price: 7.5 },
+      { name: { tr: 'Kroket (Aardappelkroket)', en: 'Potato croquette', nl: 'Aardappelkroket', fr: 'Croquette de pommes de terre' }, price: 6.5 },
+      { name: { tr: 'Fırında mantar (Geroosterde champignons)', en: 'Roasted mushrooms', nl: 'Geroosterde champignons', fr: 'Champignons rôtis' }, price: 9.5 }
     ]
   },
   {
@@ -180,7 +184,7 @@ const MENU_DATA = [
     ]
   },
   {
-    id: 'grill',
+  id: 'grill',
     title: { tr: 'IZGARA & KEBAPLAR', en: 'GRILL & KEBABS', nl: 'GRILL & KEBABS', fr: 'GRILLADES & KÉBABS' },
     image: Kabab,
     note: { tr: '(Pilav / patates / püre ile servis edilir)', en: '(Served with rice / potatoes / mash)', nl: '(Geserveerd met rijst / aardappelen / puree)', fr: '(Servi avec du riz / pommes de terre / purée)' },
@@ -200,7 +204,8 @@ const MENU_DATA = [
       { name: { tr: 'Antrikot', en: 'Ribeye steak', nl: 'Ribeye steak', fr: 'Entrecôte' }, price: 28.0 },
       { name: { tr: 'Karışık ızgara', en: 'Mixed grill', nl: 'Gemengde grill', fr: 'Grill mixte' }, price: 25.0 },
       { name: { tr: 'Sac tava', en: 'Pan sauté', nl: 'Pan gebakken', fr: 'Sauté à la poêle' }, price: 20.0 },
-      { name: { tr: 'Fırında güveç', en: 'Oven casserole', nl: 'Ovenschotel', fr: 'Casserole au four' }, price: 19.0 }
+      { name: { tr: 'Fırında güveç', en: 'Oven casserole', nl: 'Ovenschotel', fr: 'Casserole au four' }, price: 19.0 },
+      { name: { tr: 'Steak (met champignonssause of peper Saus)', en: 'Steak (with mushroom sauce or pepper sauce)', nl: 'Steak (met champignonsaus of pepersaus)', fr: 'Steak (avec sauce aux champignons ou sauce au poivre)' }, price: 26.0 }
     ]
   },
   {

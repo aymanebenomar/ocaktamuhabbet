@@ -85,7 +85,10 @@
         { "name": "Garnalen in Boter", "price": 19.5 },
         { "name": "Gevulde Bulgur", "price": 8.5 },
         { "name": "Gefrituurde Inktvis", "price": 14.5 },
-        { "name": "Slakken", "price": 18.5 }
+        { "name": "Slakken", "price": 18.5 },
+        { "name": "Jumbo garnalen op de grill", "price": 17.5 },
+        { "name": "Aardappelkroket", "price": 6.5 },
+        { "name": "Geroosterde champignons", "price": 9.5 }
       ]
     },
     "cold-meze": {
