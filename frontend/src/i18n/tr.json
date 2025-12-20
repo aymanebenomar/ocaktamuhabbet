@@ -132,6 +132,13 @@
         { "name": "Balıklı Paella (2 kişilik)", "price": 55.0 }
       ]
     },
+    "pasta": {
+      "title": "MAKARNALAR",
+      "items": [
+        { "name": "Penne (krema soslu)", "price": 18.5 },
+        { "name": "Spaghetti Bolognese", "price": 19.5 }
+      ]
+    },
     "side-dishes": {
       "title": "YAN LEZZETLER",
       "items": [
@@ -171,8 +178,15 @@
         { "name": "Çökertme kebabı", "price": 28.5 },
         { "name": "Beyti sarma", "price": 26.5 },
         { "name": "Ali Nazik (kuzu)", "price": 29.5 },
+        { "name": "Pirzola", "price": 29.5 },
+        { "name": "Madalyon şiş", "price": 29.5 },
+        { "name": "Izgara köfte", "price": 21.5 },
+        { "name": "Tavuk kanat", "price": 22.5 },
+        { "name": "Ciğer şiş", "price": 22.5 },
         { "name": "Antrikot", "price": 34.5 },
-        { "name": "Karışık ızgara", "price": 34.5 }
+        { "name": "Karışık ızgara", "price": 34.5 },
+        { "name": "Sac tava", "price": 26.5 },
+        { "name": "Fırında güveç", "price": 26.5 }
       ]
     },
     "raki": {

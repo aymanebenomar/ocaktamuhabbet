@@ -131,6 +131,13 @@
         { "name": "Paella au poisson (2 personnes)", "price": 55.0 }
       ]
     },
+    "pasta": {
+      "title": "Pâtes",
+      "items": [
+        { "name": "Penne (avec sauce crème)", "price": 18.5 },
+        { "name": "Spaghetti Bolognese", "price": 19.5 }
+      ]
+    },
     "side-dishes": {
       "title": "Accompagnements",
       "items": [
@@ -170,8 +177,15 @@
         { "name": "Kebab Çökertme", "price": 28.5 },
         { "name": "Wrap Beyti", "price": 26.5 },
         { "name": "Ali Nazik (agneau)", "price": 29.5 },
+        { "name": "Côtelettes d'agneau", "price": 29.5 },
+        { "name": "Brochette médaillon", "price": 29.5 },
+        { "name": "Boulettes grillées", "price": 21.5 },
+        { "name": "Ailes de poulet", "price": 22.5 },
+        { "name": "Brochette de foie", "price": 22.5 },
         { "name": "Entrecôte", "price": 34.5 },
-        { "name": "Grill mixte", "price": 34.5 }
+        { "name": "Grill mixte", "price": 34.5 },
+        { "name": "Sauté à la poêle", "price": 26.5 },
+        { "name": "Casserole au four", "price": 26.5 }
       ]
     },
     "raki": {

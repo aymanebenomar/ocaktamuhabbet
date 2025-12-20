@@ -132,6 +132,13 @@
         { "name": "Fish Paella (2 persons)", "price": 55.0 }
       ]
     },
+    "pasta": {
+      "title": "Pasta",
+      "items": [
+        { "name": "Penne (with cream sauce)", "price": 18.5 },
+        { "name": "Spaghetti Bolognese", "price": 19.5 }
+      ]
+    },
     "side-dishes": {
       "title": "Side Dishes",
       "items": [
@@ -171,8 +178,15 @@
         { "name": "Çökertme kebab", "price": 28.5 },
         { "name": "Beyti wrap", "price": 26.5 },
         { "name": "Ali Nazik (lamb)", "price": 29.5 },
+        { "name": "Lamb chops", "price": 29.5 },
+        { "name": "Medallion skewer", "price": 29.5 },
+        { "name": "Grilled meatballs", "price": 21.5 },
+        { "name": "Chicken wings", "price": 22.5 },
+        { "name": "Liver skewer", "price": 22.5 },
         { "name": "Ribeye steak", "price": 34.5 },
-        { "name": "Mixed grill", "price": 34.5 }
+        { "name": "Mixed grill", "price": 34.5 },
+        { "name": "Pan sauté", "price": 26.5 },
+        { "name": "Oven casserole", "price": 26.5 }
       ]
     },
     "raki": {

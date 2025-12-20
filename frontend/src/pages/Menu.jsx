@@ -27,6 +27,7 @@ import wines from '../assets/wines.jpg';
 import ndrink from '../assets/drink.jpg';
 import beer from '../assets/beer.jpg';
 import caffe from '../assets/plat4.jpg';
+import pasta from '../assets/pasta.jpg';
 /* ===================== FULL MENU DATA ===================== */
 const MENU_DATA = [
   {
@@ -119,6 +120,31 @@ const MENU_DATA = [
     ]
   },
   {
+    id: 'pasta',
+    title: { tr: 'MAKARNALAR', en: 'PASTA', nl: 'PASTA', fr: 'PÂTES' },
+    image: pasta,
+    items: [
+      { 
+        name: { 
+          tr: 'Penne (krema soslu)', 
+          en: 'Penne (with cream sauce)', 
+          nl: 'Penne (met roomsaus)', 
+          fr: 'Penne (avec sauce crème)' 
+        }, 
+        price: 18.50 
+      },
+      { 
+        name: { 
+          tr: 'Spaghetti Bolognese', 
+          en: 'Spaghetti Bolognese', 
+          nl: 'Spaghetti Bolognese', 
+          fr: 'Spaghetti Bolognese' 
+        }, 
+        price: 19.50 
+      }
+    ]
+  },
+  {
     id: 'side-dishes',
     title: { tr: 'YAN LEZZETLER', en: 'SIDE DISHES', nl: 'BIJGERECHTEN', fr: 'ACCOMPAGNEMENTS' },
     image: lezetler,
@@ -166,8 +192,15 @@ const MENU_DATA = [
       { name: { tr: 'Çökertme kebabı', en: 'Çökertme kebab', nl: 'Çökertme kebab', fr: 'Kebab Çökertme' }, price: 28.5 },
       { name: { tr: 'Beyti sarma', en: 'Beyti wrap', nl: 'Beyti wrap', fr: 'Wrap Beyti' }, price: 26.5 },
       { name: { tr: 'Ali Nazik (kuzu)', en: 'Ali Nazik (lamb)', nl: 'Ali Nazik (lam)', fr: 'Ali Nazik (agneau)' }, price: 29.5 },
+      { name: { tr: 'Pirzola', en: 'Lamb chops', nl: 'Lamskoteletten', fr: 'Côtelettes d\'agneau' }, price: 29.5 },
+      { name: { tr: 'Madalyon şiş', en: 'Medallion skewer', nl: 'Medaillonspiezen', fr: 'Brochette médaillon' }, price: 29.5 },
+      { name: { tr: 'Izgara köfte', en: 'Grilled meatballs', nl: 'Gegrilde gehaktballen', fr: 'Boulettes grillées' }, price: 21.5 },
+      { name: { tr: 'Tavuk kanat', en: 'Chicken wings', nl: 'Kippenvleugels', fr: 'Ailes de poulet' }, price: 22.5 },
+      { name: { tr: 'Ciğer şiş', en: 'Liver skewer', nl: 'Lever spies', fr: 'Brochette de foie' }, price: 22.5 },
       { name: { tr: 'Antrikot', en: 'Ribeye steak', nl: 'Ribeye steak', fr: 'Entrecôte' }, price: 34.5 },
-      { name: { tr: 'Karışık ızgara', en: 'Mixed grill', nl: 'Gemengde grill', fr: 'Grill mixte' }, price: 34.5 }
+      { name: { tr: 'Karışık ızgara', en: 'Mixed grill', nl: 'Gemengde grill', fr: 'Grill mixte' }, price: 34.5 },
+      { name: { tr: 'Sac tava', en: 'Pan sauté', nl: 'Pan gebakken', fr: 'Sauté à la poêle' }, price: 26.5 },
+      { name: { tr: 'Fırında güveç', en: 'Oven casserole', nl: 'Ovenschotel', fr: 'Casserole au four' }, price: 26.5 }
     ]
   },
   {

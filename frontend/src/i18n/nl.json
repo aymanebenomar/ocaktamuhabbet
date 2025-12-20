@@ -71,6 +71,13 @@
         { "name": "Nuggets + friet", "price": 9.5 }
       ]
     },
+    "pasta": {
+      "title": "Pasta",
+      "items": [
+        { "name": "Penne (met roomsaus)", "price": 18.5 },
+        { "name": "Spaghetti Bolognese", "price": 19.5 }
+      ]
+    },
     "starters": {
       "title": "Voorgerechten",
       "items": [
@@ -171,8 +178,15 @@
         { "name": "Çökertme kebab", "price": 28.5 },
         { "name": "Beyti wrap", "price": 26.5 },
         { "name": "Ali Nazik (lam)", "price": 29.5 },
+        { "name": "Lamskoteletten", "price": 29.5 },
+        { "name": "Medaillonspiezen", "price": 29.5 },
+        { "name": "Gegrilde gehaktballen", "price": 21.5 },
+        { "name": "Kippenvleugels", "price": 22.5 },
+        { "name": "Lever spies", "price": 22.5 },
         { "name": "Ribeye steak", "price": 34.5 },
-        { "name": "Gemengde grill", "price": 34.5 }
+        { "name": "Gemengde grill", "price": 34.5 },
+        { "name": "Pan gebakken", "price": 26.5 },
+        { "name": "Ovenschotel", "price": 26.5 }
       ]
     },
     "raki": {
