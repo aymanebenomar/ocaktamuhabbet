@@ -123,7 +123,7 @@ export default function LocationSection() {
 
             {/* Google Maps Button */}
             <a
-              href="https://maps.app.goo.gl/upMAhCjb8nKn58946"
+              href="https://maps.google.com/?q=Heilig-Hartstraat+74+Sint-Amandsberg+Gent+Belgique"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block px-8 py-3 border border-gray-900 text-gray-900 uppercase tracking-widest hover:bg-gray-900 hover:text-white transition duration-300 rounded-lg"
