@@ -94,9 +94,9 @@ const MENU_DATA = [
     title: { tr: 'MIDYELER', en: 'MUSSELS', nl: 'MOSSELEN', fr: 'MOULES' },
     image: moules,
     items: [
-      { name: { tr: 'Belçika midyesi', en: 'Belgian mussels', nl: 'Belgische mosselen', fr: 'Moules belges' }, price: 26.5 },
-      { name: { tr: 'Sarımsaklı midye', en: 'Garlic mussels', nl: 'Knoflookmosselen', fr: 'Moules à l\'ail' }, price: 27.5 },
-      { name: { tr: 'Kremalı midye', en: 'Creamy mussels', nl: 'Romige mosselen', fr: 'Moules à la crème' }, price: 28.5 },
+      { name: { tr: 'Belçika midyesi', en: 'Belgian mussels', nl: 'Belgische mosselen', fr: 'Moules belges' }, price: 20.0 },
+      { name: { tr: 'Sarımsaklı midye', en: 'Garlic mussels', nl: 'Knoflookmosselen', fr: 'Moules à l\'ail' }, price: 21.0 },
+      { name: { tr: 'Kremalı midye', en: 'Creamy mussels', nl: 'Romige mosselen', fr: 'Moules à la crème' }, price: 22.0 },
       { name: { tr: 'Cozze alla Tarantina', en: 'Cozze alla Tarantina', nl: 'Cozze alla Tarantina', fr: 'Cozze alla Tarantina' }, price: 26.5 }
     ]
   },
@@ -185,22 +185,22 @@ const MENU_DATA = [
     image: Kabab,
     note: { tr: '(Pilav / patates / püre ile servis edilir)', en: '(Served with rice / potatoes / mash)', nl: '(Geserveerd met rijst / aardappelen / puree)', fr: '(Servi avec du riz / pommes de terre / purée)' },
     items: [
-      { name: { tr: 'Et şiş', en: 'Beef skewer', nl: 'Rundvleesspies', fr: 'Brochette de bœuf' }, price: 26.5 },
-      { name: { tr: 'Tavuk şiş', en: 'Chicken skewer', nl: 'Kippenspies', fr: 'Brochette de poulet' }, price: 22.5 },
-      { name: { tr: 'Adana kebap', en: 'Adana kebab', nl: 'Adana kebab', fr: 'Kebab Adana' }, price: 24.5 },
-      { name: { tr: 'Urfa kebap', en: 'Urfa kebab', nl: 'Urfa kebab', fr: 'Kebab Urfa' }, price: 23.5 },
-      { name: { tr: 'Çökertme kebabı', en: 'Çökertme kebab', nl: 'Çökertme kebab', fr: 'Kebab Çökertme' }, price: 28.5 },
-      { name: { tr: 'Beyti sarma', en: 'Beyti wrap', nl: 'Beyti wrap', fr: 'Wrap Beyti' }, price: 26.5 },
-      { name: { tr: 'Ali Nazik (kuzu)', en: 'Ali Nazik (lamb)', nl: 'Ali Nazik (lam)', fr: 'Ali Nazik (agneau)' }, price: 29.5 },
-      { name: { tr: 'Pirzola', en: 'Lamb chops', nl: 'Lamskoteletten', fr: 'Côtelettes d\'agneau' }, price: 29.5 },
-      { name: { tr: 'Madalyon şiş', en: 'Medallion skewer', nl: 'Medaillonspiezen', fr: 'Brochette médaillon' }, price: 29.5 },
-      { name: { tr: 'Izgara köfte', en: 'Grilled meatballs', nl: 'Gegrilde gehaktballen', fr: 'Boulettes grillées' }, price: 21.5 },
-      { name: { tr: 'Tavuk kanat', en: 'Chicken wings', nl: 'Kippenvleugels', fr: 'Ailes de poulet' }, price: 22.5 },
-      { name: { tr: 'Ciğer şiş', en: 'Liver skewer', nl: 'Lever spies', fr: 'Brochette de foie' }, price: 22.5 },
-      { name: { tr: 'Antrikot', en: 'Ribeye steak', nl: 'Ribeye steak', fr: 'Entrecôte' }, price: 34.5 },
-      { name: { tr: 'Karışık ızgara', en: 'Mixed grill', nl: 'Gemengde grill', fr: 'Grill mixte' }, price: 34.5 },
-      { name: { tr: 'Sac tava', en: 'Pan sauté', nl: 'Pan gebakken', fr: 'Sauté à la poêle' }, price: 26.5 },
-      { name: { tr: 'Fırında güveç', en: 'Oven casserole', nl: 'Ovenschotel', fr: 'Casserole au four' }, price: 26.5 }
+      { name: { tr: 'Et şiş', en: 'Beef skewer', nl: 'Rundvleesspies', fr: 'Brochette de bœuf' }, price: 19.0 },
+      { name: { tr: 'Tavuk şiş', en: 'Chicken skewer', nl: 'Kippenspies', fr: 'Brochette de poulet' }, price: 17.0 },
+      { name: { tr: 'Adana kebap', en: 'Adana kebab', nl: 'Adana kebab', fr: 'Kebab Adana' }, price: 17.5 },
+      { name: { tr: 'Urfa kebap', en: 'Urfa kebab', nl: 'Urfa kebab', fr: 'Kebab Urfa' }, price: 17.5 },
+      { name: { tr: 'Çökertme kebabı', en: 'Çökertme kebab', nl: 'Çökertme kebab', fr: 'Kebab Çökertme' }, price: 25.0 },
+      { name: { tr: 'Beyti sarma', en: 'Beyti wrap', nl: 'Beyti wrap', fr: 'Wrap Beyti' }, price: 21.5 },
+      { name: { tr: 'Ali Nazik (kuzu)', en: 'Ali Nazik (lamb)', nl: 'Ali Nazik (lam)', fr: 'Ali Nazik (agneau)' }, price: 23.0 },
+      { name: { tr: 'Pirzola', en: 'Lamb chops', nl: 'Lamskoteletten', fr: 'Côtelettes d\'agneau' }, price: 23.0},
+      { name: { tr: 'Madalyon şiş', en: 'Medallion skewer', nl: 'Medaillonspiezen', fr: 'Brochette médaillon' }, price: 20.0 },
+      { name: { tr: 'Izgara köfte', en: 'Grilled meatballs', nl: 'Gegrilde gehaktballen', fr: 'Boulettes grillées' }, price: 17.0 },
+      { name: { tr: 'Tavuk kanat', en: 'Chicken wings', nl: 'Kippenvleugels', fr: 'Ailes de poulet' }, price: 16.0 },
+      { name: { tr: 'Ciğer şiş', en: 'Liver skewer', nl: 'Lever spies', fr: 'Brochette de foie' }, price: 17.0 },
+      { name: { tr: 'Antrikot', en: 'Ribeye steak', nl: 'Ribeye steak', fr: 'Entrecôte' }, price: 28.0 },
+      { name: { tr: 'Karışık ızgara', en: 'Mixed grill', nl: 'Gemengde grill', fr: 'Grill mixte' }, price: 25.0 },
+      { name: { tr: 'Sac tava', en: 'Pan sauté', nl: 'Pan gebakken', fr: 'Sauté à la poêle' }, price: 20.0 },
+      { name: { tr: 'Fırında güveç', en: 'Oven casserole', nl: 'Ovenschotel', fr: 'Casserole au four' }, price: 19.0 }
     ]
   },
   {

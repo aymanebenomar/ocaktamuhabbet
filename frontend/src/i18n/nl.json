@@ -118,9 +118,9 @@
     "mussels": {
       "title": "Mosselen",
       "items": [
-        { "name": "Belgische mosselen", "price": 26.5 },
-        { "name": "Knoflookmosselen", "price": 27.5 },
-        { "name": "Romige mosselen", "price": 28.5 },
+        { "name": "Belgische mosselen", "price": 20.0 },
+        { "name": "Knoflookmosselen", "price": 21.0 },
+        { "name": "Romige mosselen", "price": 22.0 },
         { "name": "Cozze alla Tarantina", "price": 26.5 }
       ]
     },
@@ -168,25 +168,25 @@
         { "name": "Gebakken octopus", "price": 31.5 }
       ]
     },
-    "grill": {
+     "grill": {
       "title": "Grill & Kebab's",
       "items": [
-        { "name": "Rundvleesspies", "price": 26.5 },
-        { "name": "Kippenspies", "price": 22.5 },
-        { "name": "Adana kebab", "price": 24.5 },
-        { "name": "Urfa kebab", "price": 23.5 },
-        { "name": "Çökertme kebab", "price": 28.5 },
-        { "name": "Beyti wrap", "price": 26.5 },
-        { "name": "Ali Nazik (lam)", "price": 29.5 },
-        { "name": "Lamskoteletten", "price": 29.5 },
-        { "name": "Medaillonspiezen", "price": 29.5 },
-        { "name": "Gegrilde gehaktballen", "price": 21.5 },
-        { "name": "Kippenvleugels", "price": 22.5 },
-        { "name": "Lever spies", "price": 22.5 },
-        { "name": "Ribeye steak", "price": 34.5 },
-        { "name": "Gemengde grill", "price": 34.5 },
-        { "name": "Pan gebakken", "price": 26.5 },
-        { "name": "Ovenschotel", "price": 26.5 }
+        { "name": "Rundvleesspies", "price": 19.0 },
+        { "name": "Kippenspies", "price": 17.0 },
+        { "name": "Adana kebab", "price": 17.5 },
+        { "name": "Urfa kebab", "price": 17.5 },
+        { "name": "Çökertme kebab", "price": 17.5 },
+        { "name": "Beyti wrap", "price": 21.5 },
+        { "name": "Ali Nazik (lam)", "price": 23.0 },
+        { "name": "Lamskoteletten", "price": 23.0 },
+        { "name": "Medaillonspiezen", "price": 20.0 },
+        { "name": "Gegrilde gehaktballen", "price": 17.0 },
+        { "name": "Kippenvleugels", "price": 16.0 },
+        { "name": "Lever spies", "price": 17.0 },
+        { "name": "Ribeye steak", "price": 28.0 },
+        { "name": "Gemengde grill", "price": 25.0 },
+        { "name": "Pan gebakken", "price": 20.0 },
+        { "name": "Ovenschotel", "price": 19.0 }
       ]
     },
     "raki": {
