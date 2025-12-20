@@ -77,8 +77,12 @@ const MENU_DATA = [
       { name: { tr: 'Atom', en: 'Spicy cheese dip', nl: 'Pittige kaasdip', fr: 'Dip au fromage épicé' }, price: 8.5 },
       { name: { tr: 'Yaprak sarma', en: 'Stuffed vine leaves', nl: 'Gevulde wijnbladeren', fr: 'Feuilles de vigne farcies' }, price: 8.5 },
       { name: { tr: 'Rus salatası', en: 'Russian salad', nl: 'Russische salade', fr: 'Salade russe' }, price: 9.5 },
-      { name: { tr: 'Peynir tabağı', en: 'Cheese platter', nl: 'Kaasplank', fr: 'Assiette de fromages' }, price: 18.5 },
-      { name: { tr: 'Karışık meze tabağı', en: 'Mixed meze platter', nl: 'Gemengde mezeschotel', fr: 'Assortiment de mezze' }, price: 19.5 }
+      { name: { tr: 'Peynir tabağı (mix)', en: 'Cheese platter (mix)', nl: 'Kaasplank (mix)', fr: 'Assiette de fromages (mix)' }, price: 18.5 },
+      { name: { tr: "Peynir tabağı", "en": "Cheese platter", "nl": "Kaasplankje", "fr": "Assortiment de fromages"}, price: 7.5}, 
+      { name: { tr: 'Karışık meze tabağı', en: 'Mixed meze platter', nl: 'Gemengde mezeschotel', fr: 'Assortiment de mezze' }, price: 19.5 },
+      { name: { tr: "Ara sıcaklara", "en": "Hot starters", "nl": "Warme hapjes", "fr": "Entrées chaudes"}, price: 3.5},
+
+      
     ]
   },
   {
